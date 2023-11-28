@@ -15,6 +15,10 @@ function Particle() {
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </Wrapper>
   );
@@ -44,38 +48,44 @@ const Wrapper = styled.div`
       left: 70%;
       width: 120px;
       height: 120px;
+      animation-delay: 24s;
     }
     &:nth-child(2) {
       left: 20%;
       width: 120px;
       height: 120px;
-      animation-delay: 2s;
+      animation-delay: 72s;
       animation-duration: 34s;
     }
     &:nth-child(3) {
       left: 25%;
-      animation-delay: 4s;
+      animation-duration: 50s;
+      animation-delay: 54s;
     }
     &:nth-child(4) {
       left: 80%;
       width: 320px;
       height: 320px;
-      animation-duration: 44s;
+      animation-duration: 80s;
     }
     &:nth-child(5) {
       left: 10%;
+      width: 35px;
+      height: 35px;
+      animation-duration: 30s;
+      animation-delay: 16s;
     }
     &:nth-child(6) {
       left: 60%;
       width: 240px;
       height: 240px;
-      animation-delay: 3s;
     }
     &:nth-child(7) {
       left: 32%;
       width: 160px;
       height: 160px;
-      animation-delay: 7s;
+      animation-delay: 17s;
+      animation-duration: 50s;
     }
     &:nth-child(8) {
       left: 55%;
@@ -88,20 +98,64 @@ const Wrapper = styled.div`
       left: 5%;
       width: 320px;
       height: 320px;
-      animation-delay: 2s;
-      animation-duration: 80s;
+      animation-delay: 33s;
+      animation-duration: 60s;
     }
     &:nth-child(10) {
-      left: 90%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 22s;
+      left: 15%;
+      width: 100px;
+      height: 100px;
+      animation-duration: 45s;
+      animation-delay: 2s;
     }
     &:nth-child(11) {
-      left: 8%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 2s;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      animation-delay: 3s;
+    }
+    &:nth-child(12) {
+      left: 12%;
+      width: 90px;
+      height: 90px;
+      bottom: 450px;
+      animation: spin 60s infinite linear;
+      transform: rotate(100deg);
+    }
+    &:nth-child(13) {
+      left: 60%;
+      width: 50px;
+      height: 50px;
+      bottom: 540px;
+      animation: spin 100s infinite linear;
+      transform: rotate(600deg);
+    }
+    &:nth-child(14) {
+      left: 73%;
+      width: 35px;
+      height: 35px;
+      bottom: 310px;
+      animation: spin 55s infinite linear;
+      transform: rotate(600deg);
+    }
+    &:nth-child(15) {
+      left: 59%;
+      width: 25px;
+      height: 25px;
+      bottom: 100px;
+      border-radius: 7px;
+      animation: spin 25s infinite linear;
+      transform: rotate(600deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      
+    }
+
+    100% {
+      transform: rotate(-600deg);
     }
   }
 
@@ -119,7 +173,7 @@ const Wrapper = styled.div`
     .bg-bubbles li {
     width: 20px;
     height: 20px;
-    border-radius: 4px;
+    border-radius: 6px;
       &:first-child {
         width: 30px;
         height: 30px;

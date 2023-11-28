@@ -166,6 +166,11 @@ function Blog() {
     <div className="relative flex gap-10">
       {/* <Posts />
       <TrendingPosts /> */}
+      <div className="px-40 w-screen h-screen -mt-16 flex items-center justify-center">
+        <div className="w-fit text-3xl text-black dark:text-white">
+          <h1>In Progress . . .</h1>
+        </div>
+      </div>
     </div>
   );
 }

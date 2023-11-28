@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, scroller, animateScroll } from 'react-scroll';
 import Reveal from "../Components/Reveal";
 import PageSectionHeader from "../Components/PageSectionHeader";
-import { NavLink } from 'react-router-dom';
 
 function MyBackground() {
   const [age, setAge] = useState("");
@@ -31,6 +30,11 @@ function MyBackground() {
     qoutes: ['"If it works, ', 'don\'t touch it."'],
     link: 'https://lcc.com.ph/',
   }
+
+  const handleClick = () => {
+    const pdfPath = process.env.PUBLIC_URL + "/assets/Barbacena, Rainier C. - Resume.pdf";
+    window.open(pdfPath, '_blank');
+  };
 
   return (
     <div id="aboutme" className="min-h-screen lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300">
@@ -91,15 +95,13 @@ function MyBackground() {
           <Reveal axis="x">
             <div className="flex justify-center lg:justify-start">
               <div className="w-fit px-4 py-2">
-                <NavLink to="/resume">
-                  <button className="know-more flex items-center gap-2 rounded-full border border-oxford dark:border-g bg-oxford hover:bg-oxf-hover text-white px-8 py-3 font-bold dark:bg-g dark:hover:bg-h transition-colors duration-300">
-                    Resume
-                    <ion-icon
-                    name="arrow-forward-circle-outline"
-                    class="text-xl icon-move transition-all ease-in-out duration-300"
-                    ></ion-icon>
-                  </button>
-                </NavLink>
+                <button onClick={handleClick} className="know-more flex items-center gap-2 rounded-full border border-oxford dark:border-g bg-oxford hover:bg-oxf-hover text-white px-8 py-3 font-bold dark:bg-g dark:hover:bg-h transition-colors duration-300">
+                  Resume
+                  <ion-icon
+                  name="arrow-forward-circle-outline"
+                  class="text-xl icon-move transition-all ease-in-out duration-300"
+                  ></ion-icon>
+                </button>
               </div>
             </div>
           </Reveal>

@@ -15,7 +15,6 @@ import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
-import Resume from './Pages/Resume';
 import PageNotFound from './Pages/PageNotFound';
 import Preloader from './Components/Preloader';
 import Particle from './Components/Particle';
@@ -67,7 +66,6 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/resume" element={<Resume />} />
                 <Route path="*" element={<PageNotFound />} />
               </Routes>
             )}
