@@ -156,7 +156,7 @@ function MyEducation() {
         <div className="flex-auto"></div>
         <div className="lg:w-3/5 px-4 grid grid-cols-2 gap-8">
           <div className="lg:h-52 shadow-md ring-1 rounded-lg lg:flex col-span-2 overflow-hidden transition-colors duration-300">
-            <img className="lg:h-full" src={process.env.PUBLIC_URL + "/Images/PITA.jpg"} alt="" loading="lazy" />
+            <img className="lg:h-full" src={process.env.PUBLIC_URL + "/Images/PITA.webp"} alt="PITA Building" loading="lazy" />
             {schools[0].college.map((item) => (
             <div key={item.degree} className="px-6 py-5">
               <Reveal axis="x"><h1 className="text-pro text-xl my-name">{item.degree}</h1></Reveal>
@@ -196,7 +196,7 @@ function About() {
     <div className="relative">
       <MyBackground />
       <div className="flex justify-center">
-        <img onClick={scrollToEducation} className="lg:fixed left-60 top-52 w-80 mb-10 selfie-img rounded-xl cursor-pointer" src={process.env.PUBLIC_URL + "/Images/grad_pic.jpg"} alt="" loading="lazy" />
+        <img onClick={scrollToEducation} className="lg:fixed left-60 top-52 w-80 mb-10 selfie-img rounded-xl cursor-pointer" src={process.env.PUBLIC_URL + "/Images/grad_pic.webp"} alt="" loading="lazy" />
       </div>
       <MyEducation />
     </div>

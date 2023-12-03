@@ -41,7 +41,7 @@ function Home() {
       <div className="grid place-content-center lg:p-6 xs:pt-6 xs:pb-14">
         <img
           className="w-56 h-56 rounded-full"
-          src={process.env.PUBLIC_URL + "/Images/my_pic.jpg"}
+          src={process.env.PUBLIC_URL + "/Images/my_pic.webp"}
           alt="My Picture"
           loading="lazy"
         />

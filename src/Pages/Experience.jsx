@@ -9,7 +9,7 @@ const jobExperiences = [
     website: "https://lcc.com.ph/",
     employmentDate: "September 2022 - Present",
     responsibilities: [
-      "Designed and developed web, desktop and mobile Android applications in-house to automate business processes for internal use, utilizing agile development methodologies.",
+      "Designed and developed In-House Applications based on software requirements to automate business processes for internal use, utilizing agile development methodologies.",
       "Converted desktop application to web using Javascript, PHP and MySQL and Windows CE PDT application to mobile android application using Xamarin C# and SQLite. ",
       "Enhanced, modified, repaired and expanded existing software and generic applications.",
       "Regular bug solving and feature development.",
@@ -198,7 +198,7 @@ function TechStack() {
     { id: 17, category: 'Others', name: 'GIMP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/gimp.svg", size: "h-14 w-14", bg: "bg-b", },
     { id: 18, category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
     { id: 19, category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { id: 20, category: 'Others', name: 'Navicat', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/navicat.png", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 20, category: 'Others', name: 'Navicat', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/navicat.webp", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 21, category: 'Back End', name: 'SQLite', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/sqlite.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
   ];
 

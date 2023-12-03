@@ -4,25 +4,25 @@ const postsData = [
   {
     title: 'Unleashing the Power of PHP: A Comprehensive Guide to Writing Code with PHP',
     date: 'October 21, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/php.jpg',
+    imageUrl: process.env.PUBLIC_URL + '/Images/php.webp',
     content: 'PHP, a versatile and widely-used server-side scripting language, has been the backbone of dynamic web development for decades.',
   },
   {
     title: 'The Art and Science of Responsive Web Design',
     date: 'October 22, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/responsive.jpg',
+    imageUrl: process.env.PUBLIC_URL + '/Images/responsive.webp',
     content: 'In our ever-evolving digital landscape, the way we access information has undergone a profound transformation.',
   },
   {
     title: 'Crafting Dynamic User Interfaces: Writing Code with React',
     date: 'October 19, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/react_code.jpg',
+    imageUrl: process.env.PUBLIC_URL + '/Images/react_code.webp',
     content: 'React, a popular JavaScript library developed by Facebook, has revolutionized the way we build user interfaces for web applications.',
   },
   {
     title: 'Unveiling the Power of MySQL: A Comprehensive Guide to Database Management',
     date: 'October 20, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/mysql.jpg',
+    imageUrl: process.env.PUBLIC_URL + '/Images/mysql.webp',
     content: 'Databases are the backbone of modern software applications, enabling the storage, retrieval, and management of vast amounts of data.',
   },
 ];

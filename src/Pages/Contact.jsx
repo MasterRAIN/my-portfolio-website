@@ -20,8 +20,8 @@ function Contact() {
         <br /> 
         <div className="flex justify-center px-40">
           <div className="w-fit flex gap-12 rounded-md form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 px-8 py-8">
-            <div className="">
-              <img className="w-52" src={process.env.PUBLIC_URL + "/Images/contact.png"} alt="" loading="lazy" />
+            <div className="grid place-content-center">
+              <img className="h-72" src={process.env.PUBLIC_URL + "/Images/contact.svg"} alt="Contact Picture" loading="lazy" />
             </div>
             <div className="text-g dark:text-white">
               <h1 className="text-xl transition-colors duration-300">Send me an email</h1>
