@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { NavLink } from 'react-router-dom';
 import Reveal from '../Components/Reveal';
 import { Link, scroller, animateScroll } from 'react-scroll';
 
-const JobTitles = [" Full Stack Development", " Mobile Development", " Desktop Development"];
-
 function Home() {
   const [currentJobIndex, setCurrentJobIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const JobTitles = useMemo(
+    () => [" Full Stack Development", " Mobile Development", " Desktop Development"],
+    []
+  );
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -20,21 +23,23 @@ function Home() {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
-    }
+    };
+  
     window.addEventListener('resize', handleResize);
-    return() => {
+  
+    return () => {
       window.removeEventListener('resize', handleResize);
-    }
-  })
+    };
+  }, [isMobile]);
 
-  const scrollAboutMe = () => {
+  const scrollAboutMe = useCallback(() => {
     scroller.scrollTo('aboutme', {
       duration: 1000,
       delay: 0,
       smooth: 'easeInOutQuart',
       offset: -50,
     });
-  };
+  }, []);
 
   return (
     <div className="relative w-full lg:py-10 lg:px-10 xs:py-10 xs:px-5 text-black dark:text-white">

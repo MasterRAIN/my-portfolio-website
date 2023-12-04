@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,11 +23,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-
+  useLayoutEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -39,12 +35,15 @@ function App() {
     };
   }, []);
 
+  // Simulate an asynchronous operation (e.g., fetching data) with a setTimeout
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 1000);
+
   return (
     <div className="relative bg-white dark:bg-h transition-colors duration-300 overflow-hidden">
       {isLoading ? (
-        <div className="pt-16 min-h-screen transition-colors duration-300">
-          <Preloader />
-        </div>
+        <Preloader />
       ) : (
         <Router>
           <Header />

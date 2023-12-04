@@ -54,14 +54,22 @@ function Work() {
   }, []);
 
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = debounce(() => {
       setIsMobile(window.innerWidth <= 768);
-    }
+    }, 200); // Debounce time in milliseconds
     window.addEventListener('resize', handleResize);
-    return() => {
+    return () => {
       window.removeEventListener('resize', handleResize);
-    }
-  })
+    };
+  }, [setIsMobile]);
+
+  const debounce = (func, delay) => {
+    let timer;
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(func, delay);
+    };
+  };
 
   return (
     <div id={isMobile ? "" : "top-start"} className="min-h-screen overflow-auto -mt-16 pt-16 font-bold text-h dark:text-white transition-colors duration-300">
@@ -223,7 +231,10 @@ function TechStack() {
         <Reveal distance={50}>
           <div className="w-fit lg:px-4 xs:px-2 py-2 flex lg:gap-4 xs:gap-1 justify-center bg-oxf-hover rounded-lg">
             {categories.map((category) => (
-              <button key={category.id} onClick={() => stackButtonClick(category.text)} className={` ${selectedCategory === category.text || (category.text === 'All' && selectedCategory === null) ? 'text-pro border-b-2' : 'hover:text-pro'} lg:px-4 xs:px-2 text-f cusor-pointer transition-colors duration-300`}>
+              <button
+              key={category.id}
+              onClick={() => stackButtonClick(category.text)}
+              className={`px-4 xs:px-2 text-f cursor-pointer transition-colors duration-300 ${selectedCategory === category.text || (category.text === 'All' && selectedCategory === null) ? 'text-pro border-b-2' : 'hover:text-pro'}`} >
                 {category.text}
               </button>
             ))}
@@ -235,8 +246,8 @@ function TechStack() {
       <div className="grid place-content-center">
         <div className="grid lg:grid-cols-5 lg:gap-5 xs:grid-cols-3 xs:gap-5">
           {items.filter((item) => selectedCategory === null || item.category === selectedCategory).map((item) => (
-            <Reveal distance={50}>
-              <div key={item.id} className="lg:h-40 lg:w-40 xs:w-24 flex flex-col gap-3 items-center justify-center">
+            <Reveal distance={50} key={item.id}>
+              <div className="lg:h-40 lg:w-40 xs:w-24 flex flex-col gap-3 items-center justify-center">
                 <div className={`h-24 w-24 grid place-content-center rounded-full ${item.bg}`}>
                   <img className={item.size} src={item.logo} alt="" loading="lazy" />
                 </div>

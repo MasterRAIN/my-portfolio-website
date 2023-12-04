@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { Link, scroller, animateScroll } from 'react-scroll';
 import Reveal from "../Components/Reveal";
 import PageSectionHeader from "../Components/PageSectionHeader";
@@ -22,14 +22,16 @@ function MyBackground() {
     getAge();
   }, []);
 
-  const aboutInfo = {
+  const aboutInfo = useMemo(() => {
+    return {
     name: 'I\'m Rainier',
     title: 'Full Stack Developer',
     description: 'Currently I am working as an Application Developer at LCC Malls. I\'m a Passionate Full-Stack Developer who turns ideas into code with a combination of front-end delicacy and back-end precision. I enjoy learning new things and technologies, and I enjoy coding and creating projects related to web development that have a basic, minimalistic design.',
     personals: [`Age : ${age}`, 'Residence : Albay, Philippines', 'Email : rainierbarbacena@gmail.com'],
     qoutes: ['"If it works, ', 'don\'t touch it."'],
     link: 'https://lcc.com.ph/',
-  }
+    };
+  }, [age]);
 
   const handleClick = () => {
     const pdfPath = process.env.PUBLIC_URL + "/assets/Barbacena, Rainier C. - Resume.pdf";
