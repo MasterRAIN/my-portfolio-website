@@ -136,7 +136,7 @@ function MyEducation() {
           name: 'Joroan Elementary School',
           location: 'Joroan, Tiwi, Albay',
           award: 'Salutatorian',
-          sy: '2006 - 2011',
+          sy: '2005 - 2011',
         },
       ],
     },

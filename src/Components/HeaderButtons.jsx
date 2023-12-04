@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import Reveal from './Reveal';
 
 function Navigations() {
   const location = useLocation();
@@ -16,13 +17,27 @@ function Navigations() {
     }
   })
 
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="">
       {isMobile ? (
-        <div className="absolute top-4 right-3">
-          <button className="h-10 w-10 text-3xl dark:text-white transition-colors duration-300">
-            <ion-icon name="menu"></ion-icon>
-          </button>
+        <div>
+          <div className="absolute top-3 right-3">
+            <button onClick={toggleNav} className="rounded-full grid place-content-center h-10 w-10 text-3xl dark:text-white transition-all transform duration-300 hover:bg-aa dark:hover:bg-g">
+              <ion-icon name={isOpen ? 'close' : 'menu'}></ion-icon>
+            </button>
+          </div>
+          {isOpen ? (
+              <Reveal axis="x" distance={50}>
+                <div className="w-52 h-screen mt-16 bg-white dark:bg-g">
+                  pota
+                </div>
+              </Reveal>
+            ) : ("")}
         </div>
       ) : (
         <ul className="h-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] flex gap-6 items-center overflow-x-scroll">
