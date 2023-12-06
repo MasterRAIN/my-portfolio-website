@@ -52,27 +52,27 @@ function Navigations() {
           {isOpen && (
             <Reveal axis="x" distance={50}>
               <div className="w-screen h-screen ml-half mt-16 bg-oxford text-white bg-opacity-90">
-                <ul className="h-full p-6">
+                <ul className="h-full py-6 xs:px-6 sm:px-12">
                   <Link to="home-sec" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50} onSetActive={() => handleSetActive('home-sec')}>
-                    <button className={`h-20 flex items-center gap-6 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>
+                    <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>
                     Home {activeSection === 'home-sec' && <ion-icon name="bug" class="text-xl icon-move transition-all ease-in-out duration-300" />}
                     </button>
                   </Link>
                   <Link to="about-sec" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50} onSetActive={() => handleSetActive('about-sec')}>
-                    <button className={`h-20 flex items-center gap-6 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>
+                    <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>
                       About Me {activeSection === 'about-sec' && <ion-icon name="bug" class="text-xl icon-move transition-all ease-in-out duration-300" />}
                     </button>
                   </Link>
                   <Link to="experience-sec" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50} onSetActive={() => handleSetActive('experience-sec')}>
-                    <button className={`h-20 flex items-center gap-6 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>
+                    <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>
                       Experience {activeSection === 'experience-sec' && <ion-icon name="bug" class="text-xl icon-move transition-all ease-in-out duration-300" />}
                   </button>
                   </Link>
                   <Link to="projects-sec" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50} onSetActive={() => handleSetActive('projects-sec')}>
-                    <button className={`h-20 flex items-center gap-6 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Projects</button>
+                    <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Projects</button>
                   </Link>
                   <Link to="contact-sec" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50} onSetActive={() => handleSetActive('contact-sec')}>
-                    <button className={`h-20 flex items-center gap-6 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Contact</button>
+                    <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Contact</button>
                   </Link>
                   <Link to="blog">
                     <button className={`h-20 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Blog</button>

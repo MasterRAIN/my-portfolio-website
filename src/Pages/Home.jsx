@@ -32,15 +32,6 @@ function Home() {
     };
   }, [isMobile]);
 
-  const scrollAboutMe = useCallback(() => {
-    scroller.scrollTo('aboutme', {
-      duration: 1000,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-      offset: -50,
-    });
-  }, []);
-
   return (
     <div className="relative w-full lg:py-10 lg:px-10 xs:py-10 xs:px-5 text-black dark:text-white">
       <div className="grid place-content-center lg:p-6 xs:pt-6 xs:pb-14">
@@ -51,11 +42,11 @@ function Home() {
           loading="lazy"
         />
       </div>
-      <div className="lg:flex justify-center gap-3 xs:text-center lg:text-6xl xs:text-4xl font-black lg:p-6 my-name transition-colors duration-300">
+      <div className="md:flex justify-center gap-3 xs:text-center md:text-6xl xs:text-4xl font-black lg:p-6 my-name transition-colors duration-300">
         <span><Reveal distance={50}>Hi, My name is </Reveal></span>
         <span className="text-heat dark:text-pro transition-colors duration-300"><Reveal axis="x">Rainier</Reveal></span>
       </div>
-      <div className="lg:flex justify-center gap-3 xs:text-center lg:text-4xl xs:text-lg lg:pb-8 transition-colors duration-300">
+      <div className="md:flex justify-center gap-3 xs:text-center md:text-4xl xs:text-lg lg:pb-8 transition-colors duration-300">
         <span><Reveal axis="x" distance={50}>I am into</Reveal></span>
         <span key={currentJobIndex} className="text-oxford dark:text-b font-black transition-colors duration-300">
           <Reveal distance={-50}>
