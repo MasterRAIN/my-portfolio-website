@@ -48,7 +48,7 @@ function App() {
         <Router>
           <Header />
           <Particle />
-          <div className="pt-16 min-h-screen transition-colors duration-300">
+          <div id="home-sec" className="pt-16 min-h-screen transition-colors duration-300">
             {isMobile ? (
               <div>
                 <Home />

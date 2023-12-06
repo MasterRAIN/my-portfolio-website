@@ -50,6 +50,9 @@ code {
 .rounded-custom {
   border-radius: 40px;
 }
+.ml-half {
+  margin-left: 50%;
+}
 
 /* 
   Preloader Styles

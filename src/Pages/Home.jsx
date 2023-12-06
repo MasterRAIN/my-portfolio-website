@@ -67,15 +67,15 @@ function Home() {
         <div className="grid place-content-center p-6">
           {isMobile ? (
             <div>
-              <button 
-                onClick={scrollAboutMe}
-                className="know-more flex items-center gap-2 rounded-full bg-oxford hover:bg-oxf-hover text-white px-8 py-3 font-bold dark:bg-g dark:hover:bg-h border border-oxford dark:border-g transition-colors duration-300">
-                Know More
-                <ion-icon
-                name="arrow-down-circle-outline"
-                class="text-xl icon-move transition-all ease-in-out duration-300"
-                ></ion-icon>
-              </button>
+              <Link to="about-sec" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50}>
+                <button className="know-more flex items-center gap-2 rounded-full bg-oxford hover:bg-oxf-hover text-white px-8 py-3 font-bold dark:bg-g dark:hover:bg-h border border-oxford dark:border-g transition-colors duration-300">
+                  Know More
+                  <ion-icon
+                  name="arrow-down-circle-outline"
+                  class="text-xl icon-move transition-all ease-in-out duration-300"
+                  ></ion-icon>
+                </button>
+              </Link>
             </div>
           ) : (
             <NavLink to="about-me">

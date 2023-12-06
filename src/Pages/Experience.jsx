@@ -72,7 +72,7 @@ function Work() {
   };
 
   return (
-    <div id={isMobile ? "" : "top-start"} className="min-h-screen overflow-auto -mt-16 pt-16 font-bold text-h dark:text-white transition-colors duration-300">
+    <div id={isMobile ? "" : "top-start"} className="min-h-screen overflow-auto lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300">
       <br /><br />
       <Reveal distance={50}>        
         <PageSectionHeader  
@@ -266,7 +266,7 @@ function TechStack() {
 function Experience() {
 
   return (
-    <div className="relative">
+    <div id="experience-sec" className="relative">
       <Work />
       <TechStack />
     </div>

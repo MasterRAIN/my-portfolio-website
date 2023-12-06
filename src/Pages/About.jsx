@@ -39,7 +39,7 @@ function MyBackground() {
   };
 
   return (
-    <div id="aboutme" className="min-h-screen lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300">
+    <div id="aboutme" className="min-h-screen lg:-mt-16 lg:pt-16 xs:pb-8 font-bold text-h dark:text-white transition-colors duration-300">
       <br /><br />
       <Reveal distance={50}>
         <PageSectionHeader  
@@ -185,21 +185,14 @@ function MyEducation() {
 
 function About() {
 
-  const scrollToEducation = () => {
-    scroller.scrollTo('educationSection', {
-      duration: 1000,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-      offset: -50,
-    });
-  };
-
   return (
-    <div className="relative">
+    <div id="about-sec" className="relative">
       <MyBackground />
-      <div className="flex justify-center">
-        <img onClick={scrollToEducation} className="lg:fixed left-60 top-52 w-80 mb-10 selfie-img rounded-xl cursor-pointer" src={process.env.PUBLIC_URL + "/Images/grad_pic.webp"} alt="" loading="lazy" />
-      </div>
+      <Link to="educationSection" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50}>
+        <div className="flex justify-center">
+          <img className="lg:fixed left-60 top-52 w-80 mb-10 selfie-img rounded-xl cursor-pointer" src={process.env.PUBLIC_URL + "/Images/grad_pic.webp"} alt="" loading="lazy" />
+        </div>
+      </Link>
       <MyEducation />
     </div>
   )

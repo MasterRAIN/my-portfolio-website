@@ -19,7 +19,7 @@ function Title() {
 
   const scrollToTop = () => {
     animateScroll.scrollToTop({
-      duration: 500,
+      duration: 1000,
       smooth: 'easeInOutQuart',
     });
   };

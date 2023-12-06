@@ -4,7 +4,7 @@ import PageSectionHeader from '../Components/PageSectionHeader';
 function Contact() {
   return (
     <>
-      <div className="relative text-g">
+      <div id="contact-sec" className="relative text-g">
         <br />
         <br />
         <Reveal distance={50}>

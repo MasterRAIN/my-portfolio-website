@@ -3,7 +3,7 @@ import PageSectionHeader from "../Components/PageSectionHeader";
 
 function Projects() {
   return (
-    <div className="relative">
+    <div id="projects-sec" className="relative">
       <br /><br />
       <Reveal distance={50}>
         <PageSectionHeader  
