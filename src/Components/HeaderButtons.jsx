@@ -72,7 +72,9 @@ function Navigations() {
                     <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Projects</button>
                   </Link>
                   <Link to="contact-sec" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50} onSetActive={() => handleSetActive('contact-sec')}>
-                    <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Contact</button>
+                    <button className={`h-20 flex items-center gap-4 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>
+                      Contact {activeSection === 'contact-sec' && <ion-icon name="bug" class="text-xl icon-move transition-all ease-in-out duration-300" />}
+                    </button>
                   </Link>
                   <Link to="blog">
                     <button className={`h-20 w-full font-bold text-start`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.75)' }}>Blog</button>

@@ -54,6 +54,7 @@ function App() {
                 <Home />
                 <About />
                 <Experience />
+                <Contact />
               </div>
             ) : (
               <Routes>
