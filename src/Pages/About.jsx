@@ -4,6 +4,7 @@ import Reveal from "../Components/Reveal";
 import PageSectionHeader from "../Components/PageSectionHeader";
 
 function MyBackground() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [age, setAge] = useState("");
   const yearOfBirth = 1997;
 
@@ -19,8 +20,31 @@ function MyBackground() {
   };
 
   useEffect(() => {
+    const handleResize = debounce(() => {
+      setIsMobile(window.innerWidth <= 768);
+    }, 200); 
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [setIsMobile]);
+
+  useEffect(() => {
+    const topSection = document.getElementById('top-start');
+    if (topSection) {
+      topSection.scrollIntoView();
+    }
+
     getAge();
   }, []);
+  
+  const debounce = (func, delay) => {
+    let timer;
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(func, delay);
+    };
+  };
 
   const aboutInfo = useMemo(() => {
     return {
@@ -39,7 +63,7 @@ function MyBackground() {
   };
 
   return (
-    <div id="aboutme" className="min-h-screen lg:-mt-16 lg:pt-16 xs:pb-8 font-bold text-h dark:text-white transition-colors duration-300">
+    <div id={isMobile ? "" : "top-start"} className="min-h-screen lg:-mt-16 lg:pt-16 xs:pb-8 font-bold text-h dark:text-white transition-colors duration-300">
       <br /><br />
       <Reveal distance={50}>
         <PageSectionHeader  
