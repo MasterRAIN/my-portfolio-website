@@ -28,13 +28,13 @@ function Contact() {
               <br />
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col">
-                  <input type="text" placeholder="Full Name *" id="fullname" className="h-10 rounded-md py-1 px-4 bg-a outline-none focus:ring-1 focus:ring-b dark:text-a dark:bg-g transition-colors duration-300" />
+                  <input type="text" placeholder="Full Name *" id="fullname" className="h-10 rounded-md py-1 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300" />
                 </div>
                 <div className="flex flex-col">
-                  <input type="email" placeholder="Email *" id="email" className="h-10 rounded-md py-1 px-4 bg-a outline-none focus:ring-1 focus:ring-b dark:text-a dark:bg-g transition-colors duration-300" />
+                  <input type="email" placeholder="Email *" id="email" className="h-10 rounded-md py-1 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300" />
                 </div>
                 <div className="flex flex-col">
-                  <textarea name="message" placeholder="Message *" id="message" rows="4" className="rounded-md py-3 px-4 bg-a outline-none focus:ring-1 focus:ring-b dark:text-a dark:bg-g transition-colors duration-300"></textarea>
+                  <textarea name="message" placeholder="Message *" id="message" rows="4" className="rounded-md py-3 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300"></textarea>
                 </div>
               </div>
             </div>
