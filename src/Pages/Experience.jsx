@@ -72,7 +72,7 @@ function Work() {
   };
 
   return (
-    <div id={isMobile ? "" : "top-start"} className="min-h-screen overflow-auto lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300 border">
+    <div id={isMobile ? "" : "top-start"} className="min-h-screen overflow-auto lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300">
       <br /><br />
       <Reveal distance={50}>        
         <PageSectionHeader  
@@ -228,12 +228,12 @@ function TechStack() {
       <br />
       <div className="grid place-content-center">
         <Reveal distance={50}>
-          <div className="w-fit lg:px-4 xs:px-2 py-2 flex lg:gap-4 xs:gap-1 justify-center bg-oxf-hover rounded-lg">
+          <div className="w-fit lg:px-8 xs:px-2 py-2 flex lg:gap-8 xs:gap-1 justify-center bg-oxf-hover rounded-lg">
             {categories.map((category) => (
               <button
               key={category.id}
               onClick={() => stackButtonClick(category.text)}
-              className={`px-4 xs:px-2 text-f cursor-pointer transition-colors duration-300 ${selectedCategory === category.text || (category.text === 'All' && selectedCategory === null) ? 'text-pro border-b-2' : 'hover:text-pro'}`} >
+              className={`px-4 xs:px-2 cursor-pointer transition-colors duration-300 ${selectedCategory === category.text || (category.text === 'All' && selectedCategory === null) ? 'text-pro border-b-2' : 'text-f hover:text-pro'}`} >
                 {category.text}
               </button>
             ))}

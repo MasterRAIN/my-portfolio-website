@@ -46,7 +46,7 @@ function Posts() {
       <div className="w-7/12">
         {randomPosts.map((random, index) => (
           <a href="" key={index}>
-            <div className="mb-10 p-6 bg-white rounded-xl dark:bg-g shadow-md hover:scale-105 transition-all duration-300 post-card">
+            <div className="mb-10 p-6 rounded-xl backdrop-blur bg-opacity-25 dark:bg-opacity-25 shadow-md hover:scale-105 transition-all duration-300 post-card">
               <img className="h-form rounded-xl object-cover" src={random.imageUrl} alt="" loading="lazy" />
               <br />
               <h2 className="text-xl font-bold text-black dark:text-white post-title">{random.title}</h2>
@@ -65,7 +65,7 @@ function Posts() {
       <div className="w-5/12">
         {randomPosts2.map((random2, index) => (
           <a href="" key={index}>
-            <div className="mb-10 p-6 bg-white rounded-xl dark:bg-g shadow-md hover:scale-105 transition-all duration-300 post-card">
+            <div className="mb-10 p-6 backdrop-blur bg-opacity-25 dark:bg-opacity-25 rounded-xl shadow-md hover:scale-105 transition-all duration-300 post-card">
               <img className="rounded-xl object-cover" src={random2.imageUrl} alt="" loading="lazy" />
               <br />
               <h2 className="text-xl font-bold text-black dark:text-white post-title">{random2.title}</h2>
