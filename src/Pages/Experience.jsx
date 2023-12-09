@@ -72,7 +72,7 @@ function Work() {
   };
 
   return (
-    <div id={isMobile ? "" : "top-start"} className="min-h-screen overflow-auto lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300">
+    <div id={isMobile ? "" : "top-start"} className="min-h-screen overflow-auto lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300 border">
       <br /><br />
       <Reveal distance={50}>        
         <PageSectionHeader  
@@ -177,13 +177,13 @@ function Work() {
 }
 
 function TechStack() {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState('Front End');
 
   const categories = [
-    { id: 0, text: 'All' },
-    { id: 1, text: 'Front End' },
-    { id: 2, text: 'Back End' },
-    { id: 3, text: 'Others' },
+    { id: 0, text: 'Front End' },
+    { id: 1, text: 'Back End' },
+    { id: 2, text: 'Others' },
+    { id: 3, text: 'All' },
   ];
 
   const items = [
@@ -206,7 +206,6 @@ function TechStack() {
     { id: 17, category: 'Others', name: 'GIMP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/gimp.svg", size: "h-14 w-14", bg: "bg-b", },
     { id: 18, category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
     { id: 19, category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { id: 20, category: 'Others', name: 'Navicat', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/navicat.webp", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 21, category: 'Back End', name: 'SQLite', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/sqlite.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
   ];
 
