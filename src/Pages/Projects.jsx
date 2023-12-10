@@ -24,30 +24,12 @@ function Projects() {
     },
     {
       id: 0,
-      title: 'Personal Portfolio',
+      title: 'COVIK Tabaco',
       icon: 'globe-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/covik-tabaco.webp",
       category: 'Web',
-      stacks: ["React JS", "Tailwind CSS", "Netlify"],
-      link: 'https://rainiercondebarbacena.netlify.app',
-    },
-    {
-      id: 0,
-      title: 'Personal Portfolio',
-      icon: 'globe-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
-      category: 'Web',
-      stacks: ["React JS", "Tailwind CSS", "Netlify"],
-      link: 'https://rainiercondebarbacena.netlify.app',
-    },
-    {
-      id: 0,
-      title: 'Personal Portfolio',
-      icon: 'globe-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
-      category: 'Web',
-      stacks: ["React JS", "Tailwind CSS", "Netlify"],
-      link: 'https://rainiercondebarbacena.netlify.app',
+      stacks: ["HTML", "CSS", "Javascript", "JQuery", "PHP", "MySQL"],
+      link: '',
     },
   ]
   
@@ -89,7 +71,8 @@ function Projects() {
               <div className="rounded-lg form-shadow group bg-oxford dark:bg-g text-white overflow-hidden">
                 <div className="flex gap-4 items-center px-6 py-3">
                   <ion-icon name={project.icon} class="text-xl"></ion-icon>
-                  <h1 className="my-name">{project.title.split(' ').slice(0, -1).join(' ')} <span className="text-pro">{project.title.split(' ').slice(-1)}</span></h1>
+                  <h1 className="my-name">{project.title}</h1>
+                  {/* <h1 className="my-name">{project.title.split(' ').slice(0, -1).join(' ')} <span className="text-pro">{project.title.split(' ').slice(-1)}</span></h1> */}
                 </div>
                 <div className="relative">
                   <div className="absolute flex flex-col h-full w-1/2 bg-oxford z-50 px-6 py-3 -translate-x-full group-hover:-translate-x-0 ease-in-out transition-all duration-300">
@@ -101,9 +84,15 @@ function Projects() {
                     </ul>
                     <div className="flex gap-2 text-pro">
                       <ion-icon name="link-outline"></ion-icon>
-                      <h1 className="text-xs font-normal border-b-2">
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">Live</a>
-                      </h1>
+                      {project.link ? (
+                        <h1 className="text-xs font-normal border-b-2">
+                          <a href={project.link} target="_blank" rel="noopener noreferrer">
+                            Live
+                          </a>
+                        </h1>
+                      ) : (
+                        <p className="text-xs font-normal text-gray-500">Not Available</p>
+                      )}
                     </div>
                   </div>
                   <img src={project.image} alt="" />
