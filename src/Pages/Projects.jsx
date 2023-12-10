@@ -28,7 +28,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/covik-tabaco.webp",
       category: 'Web',
-      stacks: ["HTML", "CSS", "Javascript", "JQuery", "PHP", "MySQL"],
+      stacks: ["HTML, CSS", "Vanilla JS", "JQuery", "PHP", "MySQL"],
       link: '',
     },
     {
@@ -84,7 +84,7 @@ function Projects() {
                   {/* <h1 className="my-name">{project.title.split(' ').slice(0, -1).join(' ')} <span className="text-pro">{project.title.split(' ').slice(-1)}</span></h1> */}
                 </div>
                 <div className="relative">
-                  <div className="absolute flex flex-col h-full w-1/2 bg-oxford z-50 px-6 py-3 -translate-x-full group-hover:-translate-x-0 ease-in-out transition-all duration-300">
+                  <div className="absolute flex flex-col h-full w-1/2 bg-oxford dark:bg-g z-50 px-6 py-3 -translate-x-full group-hover:-translate-x-0 ease-in-out transition-all duration-300">
                     <h1 className="my-name text-sm text-aa">Tech Stack: </h1>
                     <ul className="text-xs font-normal text-a list-disc px-4 flex-auto">
                       {project.stacks.map((stack, index) => (
