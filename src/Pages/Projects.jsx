@@ -11,6 +11,45 @@ function Projects() {
     { id: 2, text: 'Desktop' },
     { id: 3, text: 'Design' },
   ];
+
+  const projects = [
+    {
+      id: 0,
+      title: 'Personal Portfolio',
+      icon: 'globe-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
+      category: 'Web',
+      stacks: ["React JS", "Tailwind CSS", "Netlify"],
+      link: 'https://rainiercondebarbacena.netlify.app',
+    },
+    {
+      id: 0,
+      title: 'Personal Portfolio',
+      icon: 'globe-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
+      category: 'Web',
+      stacks: ["React JS", "Tailwind CSS", "Netlify"],
+      link: 'https://rainiercondebarbacena.netlify.app',
+    },
+    {
+      id: 0,
+      title: 'Personal Portfolio',
+      icon: 'globe-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
+      category: 'Web',
+      stacks: ["React JS", "Tailwind CSS", "Netlify"],
+      link: 'https://rainiercondebarbacena.netlify.app',
+    },
+    {
+      id: 0,
+      title: 'Personal Portfolio',
+      icon: 'globe-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
+      category: 'Web',
+      stacks: ["React JS", "Tailwind CSS", "Netlify"],
+      link: 'https://rainiercondebarbacena.netlify.app',
+    },
+  ]
   
   const stackButtonClick = (category) => {
     setSelectedCategory(category);
@@ -45,29 +84,33 @@ function Projects() {
           </Reveal>
         </div>
         <div className="grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 lg:py-10 md:px-44">
-          <div className="rounded-lg form-shadow group bg-oxford dark:bg-g text-aa overflow-hidden">
-            <div className="flex gap-4 items-center px-6 py-3">
-              <ion-icon name="globe-outline" class="text-xl"></ion-icon>
-              <h1 className="my-name">Personal Portfolio</h1>
-            </div>
-            <div className="relative">
-              <div className="absolute flex flex-col h-full w-1/2 bg-white text-h z-50 px-6 py-3 -translate-x-full group-hover:-translate-x-0 transition-all duration-300">
-                <h1 className="my-name text-sm">Tech Stack: </h1>
-                <ul className="text-xs list-disc px-4 flex-auto">
-                  <li>React JS</li>
-                  <li>Tailwind CSS</li>
-                  <li>Netlify</li>
-                </ul>
-                <div className="flex gap-2 text-c">
-                  <ion-icon name="link-outline"></ion-icon>
-                  <h1 className="text-xs border-b-2">
-                    <a href="https://rainiercondebarbacena.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
-                  </h1>
+          {projects.filter((project) => selectedCategory === null || project.category === selectedCategory).map((project) => (
+            <Reveal distance={50} delay={0.2} key={project.id}>
+              <div className="rounded-lg form-shadow group bg-oxford dark:bg-g text-white overflow-hidden">
+                <div className="flex gap-4 items-center px-6 py-3">
+                  <ion-icon name={project.icon} class="text-xl"></ion-icon>
+                  <h1 className="my-name">{project.title.split(' ').slice(0, -1).join(' ')} <span className="text-pro">{project.title.split(' ').slice(-1)}</span></h1>
+                </div>
+                <div className="relative">
+                  <div className="absolute flex flex-col h-full w-1/2 bg-oxford z-50 px-6 py-3 -translate-x-full group-hover:-translate-x-0 ease-in-out transition-all duration-300">
+                    <h1 className="my-name text-sm text-aa">Tech Stack: </h1>
+                    <ul className="text-xs font-normal text-a list-disc px-4 flex-auto">
+                      {project.stacks.map((stack, index) => (
+                        <li key={index}>{stack}</li>
+                      ))}
+                    </ul>
+                    <div className="flex gap-2 text-pro">
+                      <ion-icon name="link-outline"></ion-icon>
+                      <h1 className="text-xs font-normal border-b-2">
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">Live</a>
+                      </h1>
+                    </div>
+                  </div>
+                  <img src={project.image} alt="" />
                 </div>
               </div>
-              <img src={process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp"} alt="" />
-            </div>
-          </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </div>

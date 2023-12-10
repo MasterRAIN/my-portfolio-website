@@ -142,7 +142,7 @@ function Work() {
                 <ion-icon name="briefcase"></ion-icon>
               </span>
               <div className={`${orderClass3} w-full ml-3 md:ml-0 md:w-5/12 md:px-4 md:py-4`}>
-              <Reveal axis="x" distance={hiddenDistance}>
+              <Reveal axis="x" distance={hiddenDistance} delay={0.2}>
                 <div className="rounded-lg p-3 backdrop-blur bg-opacity-25 dark:bg-opacity-25">
                   <h1 className="text-2xl my-name">{experience.title}</h1>
                   <p className="font-black">

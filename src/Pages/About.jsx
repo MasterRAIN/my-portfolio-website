@@ -77,14 +77,14 @@ function MyBackground() {
       <div className="lg:flex lg:py-10 lg:px-40">
         <div className="flex-auto"></div>
         <div className="lg:w-3/5 py-5">
-          <Reveal axis="x">
+          <Reveal axis="x" delay={0.2}>
             <h1 className="text-2xl my-name px-4 lg:text-left text-center">{aboutInfo.name}</h1>
           </Reveal>
-          <Reveal axis="x">
+          <Reveal axis="x" delay={0.2}>
             <h1 className="font-black px-4 lg:text-left text-center">{aboutInfo.title}</h1>
           </Reveal>
           <br />
-          <Reveal axis="x">
+          <Reveal axis="x" delay={0.2}>
             <p className="leading-relaxed text-sm font-medium px-4 lg:text-left text-justify">
               {aboutInfo.description.split('LCC Malls').map((text, index, array) => (
                 index === array.length - 1 ? (
@@ -106,19 +106,19 @@ function MyBackground() {
             </p>
           </Reveal>
           <br />
-          <Reveal axis="x">
+          <Reveal axis="x" delay={0.2}>
             {aboutInfo.personals.map((personal, index) => (
               <h1 key={index} className="text-sm text-f font-medium px-4">{personal}</h1>
             ))}
           </Reveal>
           <br />
-          <Reveal axis="x">
+          <Reveal axis="x" delay={0.2}>
             <p className="text-oxford dark:text-b transition-colors duration-300 px-4 lg:text-left text-center">
               {aboutInfo.qoutes[0]}<span className="text-heat dark:text-pro transition-colors duration-300">{aboutInfo.qoutes[1]}</span>
             </p>
           </Reveal>
           <br />
-          <Reveal axis="x">
+          <Reveal axis="x" delay={0.2}>
             <div className="flex justify-center lg:justify-start">
               <div className="w-fit px-4 py-2">
                 <button onClick={handleClick} className="know-more flex items-center gap-2 rounded-full border border-oxford dark:border-g bg-oxford hover:bg-oxf-hover text-white px-8 py-3 font-bold dark:bg-g dark:hover:bg-h transition-colors duration-300">
@@ -205,7 +205,6 @@ function MyEducation() {
     </div>
   )
 }
-
 
 function About() {
 

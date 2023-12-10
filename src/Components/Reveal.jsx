@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
-function Reveal({ children, axis = 'y', distance = -50, width = '100%', }) {
+function Reveal({ children, axis = 'y', distance = -50, width = '100%', delay = 0 }) {
   const containerRef = useRef(null);
   const inView = useInView(containerRef, { triggerOnce: true });
   const mainControls = useAnimation();
@@ -28,8 +28,9 @@ function Reveal({ children, axis = 'y', distance = -50, width = '100%', }) {
       transition={{
         duration: 0.5,
         ease: [0.1, 0.8, 0.2, 0.9],
+        delay: delay,
       }}
-      style={{ width: width, overflow: 'hidden' }}
+      style={{ width: width }}
     >
       {children}
     </motion.div>
