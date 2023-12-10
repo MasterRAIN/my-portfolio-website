@@ -20,7 +20,7 @@ function Projects() {
       image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
       category: 'Web',
       stacks: ["React JS", "Tailwind CSS", "Netlify"],
-      link: 'https://rainiercondebarbacena.netlify.app',
+      link: 'https://rainiercondebarbacena.netlify.app/',
     },
     {
       id: 0,
@@ -30,6 +30,15 @@ function Projects() {
       category: 'Web',
       stacks: ["HTML", "CSS", "Javascript", "JQuery", "PHP", "MySQL"],
       link: '',
+    },
+    {
+      id: 0,
+      title: 'TODO List',
+      icon: 'globe-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/todo-list.webp",
+      category: 'Web',
+      stacks: ["React JS", "CSS", "Netlify"],
+      link: 'https://rainier-todolist.netlify.app/',
     },
   ]
   
