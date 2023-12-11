@@ -51,6 +51,33 @@ function Projects() {
     },
     {
       id: 4,
+      title: 'PRIMOZ Logo',
+      icon: 'brush-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.webp",
+      category: 'Design',
+      stacks: ["Inkscape"],
+      link: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.svg",
+    },
+    {
+      id: 5,
+      title: '60th Birthday Logo',
+      icon: 'brush-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.webp",
+      category: 'Design',
+      stacks: ["Inkscape"],
+      link: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.svg",
+    },
+    {
+      id: 6,
+      title: 'Game Avatar',
+      icon: 'brush-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/master-rain.webp",
+      category: 'Design',
+      stacks: ["Inkscape"],
+      link: process.env.PUBLIC_URL + "/Images/Projects/master-rain.png",
+    },
+    {
+      id: 7,
       title: 'BAPA Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/bapa-logo.webp",
@@ -102,7 +129,7 @@ function Projects() {
                   {/* <h1 className="my-name">{project.title.split(' ').slice(0, -1).join(' ')} <span className="text-pro">{project.title.split(' ').slice(-1)}</span></h1> */}
                 </div>
                 <div className="relative">
-                  <div className="absolute flex flex-col h-full w-1/2 bg-oxford dark:bg-g z-50 px-6 py-3 -translate-x-full group-hover:-translate-x-0 ease-in-out transition-all duration-300">
+                  <div className="absolute flex flex-col h-full w-1/2 bg-oxford dark:bg-g px-6 py-3 -translate-x-full group-hover:-translate-x-0 ease-in-out transition-all duration-300">
                     <h1 className="my-name text-sm text-aa">Tech Stack: </h1>
                     <ul className="text-xs font-normal text-a list-disc px-4 flex-auto">
                       {project.stacks.map((stack, index) => (
@@ -114,7 +141,7 @@ function Projects() {
                       {project.link ? (
                         <h1 className="text-xs font-normal border-b-2">
                           <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            Live
+                            Link
                           </a>
                         </h1>
                       ) : (
