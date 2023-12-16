@@ -93,7 +93,7 @@ function Projects() {
 
   return (
     <div id="projects-sec" className="relative">
-      <div className="min-h-screen pb-8 overflow-auto lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300">
+      <div className="min-h-screen pb-8 lg:-mt-16 lg:pt-16 font-bold text-h dark:text-white transition-colors duration-300">
         <br /><br />
         <Reveal distance={50}>
           <PageSectionHeader  
@@ -119,7 +119,7 @@ function Projects() {
             </div>
           </Reveal>
         </div>
-        <div className="grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 lg:py-10 md:px-44">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 lg:py-10 md:px-44 p-3">
           {projects.filter((project) => selectedCategory === null || project.category === selectedCategory).map((project) => (
             <Reveal distance={50} delay={0.2} key={project.id}>
               <div className="rounded-lg form-shadow group bg-oxford dark:bg-g text-white overflow-hidden">

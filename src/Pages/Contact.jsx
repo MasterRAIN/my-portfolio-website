@@ -17,29 +17,31 @@ function Contact() {
           />
         </Reveal>
         <br />
-        <div className="flex justify-center my-3 xs:px-4 md:px-40">
-          <div className="xs:w-full lg:w-fit flex gap-12 rounded-md form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 xs:px-4 md:px-8 py-8">
-            <div className="grid place-content-center md:block xs:hidden">
-              <img className="h-72" src={process.env.PUBLIC_URL + "/Images/contact.svg"} alt="Contact Picture" loading="lazy" />
-            </div>
-            <div className="text-g dark:text-white xs:w-full md:w-96">
-              <h1 className="text-xl transition-colors duration-300">Send me an email</h1>
-              <p className="text-sm text-f">Feel free to reach out, my inbox is always open.</p>
-              <br />
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col">
-                  <input type="text" placeholder="Full Name *" id="fullname" className="h-10 rounded-md py-1 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300" />
-                </div>
-                <div className="flex flex-col">
-                  <input type="email" placeholder="Email *" id="email" className="h-10 rounded-md py-1 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300" />
-                </div>
-                <div className="flex flex-col">
-                  <textarea name="message" placeholder="Message *" id="message" rows="4" className="rounded-md py-3 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300"></textarea>
+        <Reveal distance={50}>
+          <div className="flex justify-center my-3 xs:px-4 md:px-40">
+            <div className="xs:w-full lg:w-fit flex gap-12 rounded-md form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 xs:px-4 md:px-8 py-8">
+              <div className="grid place-content-center md:block xs:hidden">
+                <img className="h-72" src={process.env.PUBLIC_URL + "/Images/contact.svg"} alt="Contact Picture" loading="lazy" />
+              </div>
+              <div className="text-g dark:text-white xs:w-full md:w-96">
+                <h1 className="text-xl transition-colors duration-300">Send me an email</h1>
+                <p className="text-sm text-f">Feel free to reach out, my inbox is always open.</p>
+                <br />
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col">
+                    <input type="text" placeholder="Full Name *" id="fullname" className="h-10 rounded-md py-1 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300" />
+                  </div>
+                  <div className="flex flex-col">
+                    <input type="email" placeholder="Email *" id="email" className="h-10 rounded-md py-1 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300" />
+                  </div>
+                  <div className="flex flex-col">
+                    <textarea name="message" placeholder="Message *" id="message" rows="4" className="rounded-md py-3 px-4 bg-aa outline-none focus:ring-1 focus:ring-a dark:text-a dark:bg-g transition-colors duration-300"></textarea>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
         <div className="grid place-content-center p-3">
           <Reveal>
             <a href="/contact" rel="noopener noreferrer">
