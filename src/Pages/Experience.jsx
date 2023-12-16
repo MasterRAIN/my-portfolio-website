@@ -202,10 +202,11 @@ function TechStack() {
     { id: 13, category: 'Back End', name: 'Java', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/java.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 14, category: 'Front End', name: 'React', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/react.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 15, category: 'Front End', name: 'Tailwind CSS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/tailwind.svg", size: "h-16 w-16", bg: "bg-oxf-hover", },
-    { id: 16, category: 'Others', name: 'GitHub', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/github.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { id: 17, category: 'Others', name: 'GIMP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/gimp.svg", size: "h-14 w-14", bg: "bg-b", },
-    { id: 18, category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
-    { id: 19, category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 16, category: 'Others', name: 'Git', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/git.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 17, category: 'Others', name: 'GitHub', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/github.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 18, category: 'Others', name: 'GIMP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/gimp.svg", size: "h-14 w-14", bg: "bg-b", },
+    { id: 19, category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
+    { id: 20, category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 21, category: 'Back End', name: 'SQLite', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/sqlite.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
   ];
 
