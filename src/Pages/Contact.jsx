@@ -42,7 +42,7 @@ function Contact() {
             </div>
           </div>
         </Reveal>
-        <div className="grid place-content-center p-3">
+        <div className="grid place-content-center p-3 mb-10">
           <Reveal delay={0.2}>
             <a href="/contact" rel="noopener noreferrer">
               <div className="w-fit p-4">
@@ -57,12 +57,13 @@ function Contact() {
             </a>
           </Reveal>
         </div>
-        <br />
-        <div className="text-center mb-20">
-          <h1 className="text-sm dark:text-a">Or email me directly at</h1>
+        <div className="text-center lg:mb-20 xs:mb-36">
+          <Reveal>
+            <h1 className="text-sm dark:text-a">Or email me directly at</h1>
+          </Reveal>
           <br />
           <Reveal>
-            <h1 className="text-h dark:text-aa font-bold">rainierbarbacena@gmail.com</h1>
+            <h1 className="text-h dark:text-aa font-bold underline">rainierbarbacena@gmail.com</h1>
           </Reveal>
         </div>
       </div>

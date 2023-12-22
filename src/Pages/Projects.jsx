@@ -24,7 +24,7 @@ function Projects() {
     {
       title: 'Transfer Releasing (Out)',
       icon: 'globe-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/online-trfout.webp",
       category: 'Web',
       stacks: ["HTML,CSS", "CSS", "Javascript", "PHP", "MySQL"],
       link: '',
@@ -40,7 +40,7 @@ function Projects() {
     {
       title: 'CCRAS Automation',
       icon: 'globe-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/ccras.webp",
       category: 'Web',
       stacks: ["HTML, CSS", "Javascript", "PHP", "MySQL"],
       link: '',
@@ -48,7 +48,7 @@ function Projects() {
     {
       title: 'Online MPV',
       icon: 'globe-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/online-mpv.webp",
       category: 'Web',
       stacks: ["HTML, CSS", "Javascript", "PHP", "MySQL"],
       link: '',
@@ -64,7 +64,7 @@ function Projects() {
     { // ----------------------------------------------------------------- Desktop
       title: 'Smart EOD Utility',
       icon: 'desktop-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/smart-eod.webp",
       category: 'Desktop',
       stacks: ["C#", "WinForms"],
       link: '',
@@ -72,7 +72,7 @@ function Projects() {
     {
       title: 'Customer Down File Utility',
       icon: 'desktop-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/downfile.webp",
       category: 'Desktop',
       stacks: ["C#"],
       link: '',
@@ -80,7 +80,7 @@ function Projects() {
     {
       title: 'Salary Deduction Posting',
       icon: 'desktop-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/batch-posting.webp",
       category: 'Desktop',
       stacks: ["Laravel", "Batch file"],
       link: '',
@@ -88,7 +88,7 @@ function Projects() {
     { // ----------------------------------------------------------------- Mobile
       title: 'Transfer Releasing Android',
       icon: 'phone-portrait-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/android-trfout.webp",
       category: 'Mobile',
       stacks: ["C#", "Xamarin"],
       link: '',
@@ -96,7 +96,7 @@ function Projects() {
     {
       title: 'Mobile Price Verifier',
       icon: 'phone-portrait-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/placeholder.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/android-mpv.webp",
       category: 'Mobile',
       stacks: ["C#", "Xamarin"],
       link: '',
