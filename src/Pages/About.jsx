@@ -51,7 +51,7 @@ function MyBackground() {
     name: 'I\'m Rainier',
     title: 'Full Stack Developer',
     description: 'Currently I am working as an Application Developer at LCC Malls. I\'m a Passionate Full-Stack Developer who turns ideas into code with a combination of front-end delicacy and back-end precision. I enjoy learning new things and technologies, and I enjoy coding and creating projects related to web development that have a basic, minimalistic design.',
-    personals: [`Age : ${age}`, 'Pronouns : He/Him', 'Residence : Bacacay, Albay, Philippines'],
+    personals: [`Age : ${age}`, 'Pronouns : He/Him', 'Residence : Albay, Philippines'],
     qoutes: ['"If it works, ', 'don\'t touch it."'],
     link: 'https://lcc.com.ph/',
     };
