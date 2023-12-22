@@ -50,7 +50,7 @@ function Posts() {
               <img className="h-form rounded-xl object-cover" src={random.imageUrl} alt="" loading="lazy" />
               <br />
               <h2 className="text-xl font-bold text-black dark:text-white post-title">{random.title}</h2>
-              <h1 className="text-sm text-c font-bold flex gap-10">
+              <h1 className="text-sm text-b font-bold flex gap-10">
                 <div className="flex align-center">
                   <ion-icon name="calendar" class="h-4 w-4 mr-2"></ion-icon>
                   {random.date}
@@ -69,7 +69,7 @@ function Posts() {
               <img className="rounded-xl object-cover" src={random2.imageUrl} alt="" loading="lazy" />
               <br />
               <h2 className="text-xl font-bold text-black dark:text-white post-title">{random2.title}</h2>
-              <h1 className="text-sm text-c font-bold mb-4 flex gap-10">
+              <h1 className="text-sm text-b font-bold mb-4 flex gap-10">
                 <div className="flex align-center"><ion-icon name="calendar" class="h-4 w-4 mr-2"></ion-icon>{random2.date}</div>
               </h1>
               <p className="dark:text-a">{random2.content}</p>
@@ -106,7 +106,7 @@ function TrendingPosts() {
   return (
     <div className="w-4/12 h-fit fixed right-0 pt-10 pl-10 pr-20">
       <div className="rounded-md h-10 flex shadow-md overflow-hidden bg-white dark:text-a dark:bg-g transition-colors duration-300">
-        <div className="w-16 grid place-content-center text-c">
+        <div className="w-16 grid place-content-center text-b">
           <ion-icon name="search"></ion-icon>
         </div>
         <input
@@ -133,7 +133,7 @@ function TrendingPosts() {
               <div className="w-full">
                 <h2 className="text-sm text-black font-bold post-title2">{trending.title}</h2>
                 <h1>
-                  <div className="flex align-center text-xs text-c">
+                  <div className="flex align-center text-xs text-b">
                     <ion-icon name="calendar" class="h-3 w-3 mr-2"></ion-icon>
                     {trending.date}
                   </div>

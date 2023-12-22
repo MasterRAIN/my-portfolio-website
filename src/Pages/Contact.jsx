@@ -17,7 +17,7 @@ function Contact() {
           />
         </Reveal>
         <br />
-        <Reveal distance={50}>
+        <Reveal distance={50} delay={0.2}>
           <div className="flex justify-center my-3 xs:px-4 md:px-40">
             <div className="xs:w-full lg:w-fit flex gap-12 rounded-md form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 xs:px-4 md:px-8 py-8">
               <div className="grid place-content-center md:block xs:hidden">
@@ -43,7 +43,7 @@ function Contact() {
           </div>
         </Reveal>
         <div className="grid place-content-center p-3">
-          <Reveal>
+          <Reveal delay={0.2}>
             <a href="/contact" rel="noopener noreferrer">
               <div className="w-fit p-4">
                   <button className="know-more flex items-center gap-2 rounded-full border border-oxford dark:border-g bg-oxford hover:bg-oxf-hover text-white px-8 py-3 font-bold dark:bg-g dark:hover:bg-h transition-colors duration-300">
@@ -55,6 +55,14 @@ function Contact() {
                   </button>
               </div>
             </a>
+          </Reveal>
+        </div>
+        <br />
+        <div className="text-center mb-20">
+          <h1 className="text-sm dark:text-a">Or email me directly at</h1>
+          <br />
+          <Reveal>
+            <h1 className="text-h dark:text-aa font-bold">rainierbarbacena@gmail.com</h1>
           </Reveal>
         </div>
       </div>
