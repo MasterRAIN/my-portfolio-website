@@ -25,7 +25,7 @@ function Title() {
   };
 
   return (
-    <div className="my-logo group cursor-pointer absolute top-5 xs:left-3 md:left-16">
+    <div className="my-logo group cursor-pointer absolute top-5 xl:left-16 lg:left-10 md:left-6 xs:left-3">
       {isMobile ? (
         <div onClick={scrollToTop}>
           <h4 className="text-xl font-black flex items-center">

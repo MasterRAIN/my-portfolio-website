@@ -87,27 +87,27 @@ function Navigations() {
           )}
         </div>
       ) : (
-        <ul className="h-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] flex gap-6 items-center overflow-x-scroll">
+        <ul className="h-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] flex xl:gap-6 lg:gap-3 md:gap-1 items-center overflow-x-scroll">
           <NavLink to="/">
             <button className={`flex items-center justify-center m-0 px-4 h-8 gap-2 rounded-md cursor-pointer transition-colors duration-300 hover:bg-aa font-bold dark:md:hover:bg-h ${location.pathname === '/' ? 'dark:text-white bg-aa dark:bg-h' : 'text-g dark:text-a'}`}>Home</button>
           </NavLink>
-          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300"></ion-icon>
+          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300 lg:block md:hidden"></ion-icon>
           <NavLink to="about-me">
             <button className={`flex items-center justify-center m-0 px-4 h-8 gap-2 rounded-md cursor-pointer transition-colors duration-300 hover:bg-aa font-bold dark:md:hover:bg-h ${location.pathname === '/about-me' ? 'dark:text-white bg-aa dark:bg-h' : 'text-g dark:text-a'}`}>About Me</button>
           </NavLink>
-          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300"></ion-icon>
+          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300 lg:block md:hidden"></ion-icon>
           <NavLink to="experience">
             <button className={`flex items-center justify-center m-0 px-4 h-8 gap-2 rounded-md cursor-pointer transition-colors duration-300 hover:bg-aa font-bold dark:md:hover:bg-h ${location.pathname === '/experience' ? 'dark:text-white bg-aa dark:bg-h' : 'text-g dark:text-a'}`}>Experience</button>
           </NavLink>
-          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300"></ion-icon>
+          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300 lg:block md:hidden"></ion-icon>
           <NavLink to="projects">
             <button className={`flex items-center justify-center m-0 px-4 h-8 gap-2 rounded-md cursor-pointer transition-colors duration-300 hover:bg-aa font-bold dark:md:hover:bg-h ${location.pathname === '/projects' ? 'dark:text-white bg-aa dark:bg-h' : 'text-g dark:text-a'}`}>Projects</button>
           </NavLink>
-          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300"></ion-icon>
+          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300 lg:block md:hidden"></ion-icon>
           <NavLink to="contact">
             <button className={`flex items-center justify-center m-0 px-4 h-8 gap-2 rounded-md cursor-pointer transition-colors duration-300 hover:bg-aa font-bold dark:md:hover:bg-h ${location.pathname === '/contact' ? 'dark:text-white bg-aa dark:bg-h' : 'text-g dark:text-a'}`}>Contact</button>
           </NavLink>
-          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300"></ion-icon>
+          <ion-icon name="ellipsis-vertical-outline" class="text-g dark:text-a transition-colors duration-300 lg:block md:hidden"></ion-icon>
           <NavLink to="blog">
             <button className={`flex items-center justify-center m-0 px-4 h-8 gap-2 rounded-md cursor-pointer transition-colors duration-300 hover:bg-aa font-bold dark:md:hover:bg-h ${location.pathname === '/blog' ? 'dark:text-white bg-aa dark:bg-h' : 'text-g dark:text-a'}`}>Blog</button>
           </NavLink>

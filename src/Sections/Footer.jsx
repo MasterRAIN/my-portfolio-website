@@ -53,7 +53,7 @@ function Footer() {
           </div>
         ) : (
           <div className="w-full grid place-content-center h-8 -mt-8 text-sm bg-white dark:bg-g dark:text-a shadow-inner transition-colors duration-300">
-            <div className="flex gap-2 absolute xs:left-3 lg:left-16">
+            <div className="flex gap-2 absolute xl:left-16 lg:left-10 md:left-6 xs:left-3">
               {techStack.map((tech, index) => (
                 <img 
                   key={index} 
@@ -64,7 +64,7 @@ function Footer() {
               ))}
             </div>
             <h1>© {currentYear} All rights reserved | <span className="text-heat dark:text-pro">Rainier Conde Barbacena</span></h1>
-            <div className="flex gap-4 absolute xs:right-3 lg:right-16 text-xl translate-y-1.5">
+            <div className="flex gap-4 absolute xl:right-16 lg:right-10 md:right-6 xs:right-3 text-xl translate-y-1.5">
               {socialMedia.map((social, index) => (
                 <a 
                   key={index}
