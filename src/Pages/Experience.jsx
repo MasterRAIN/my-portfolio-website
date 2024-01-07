@@ -4,6 +4,7 @@ import PageSectionHeader from "../Components/PageSectionHeader";
 
 const jobExperiences = [
   {
+    id: 1,
     title: "Application Developer",
     company: "LCC Malls",
     website: "https://lcc.com.ph/",
@@ -17,6 +18,7 @@ const jobExperiences = [
     skills: ["HTML", "CSS", "Javascript", "PHP", "Laravel", "MySQL", "C#", "Xamarin", "VB.NET", "MSSQL Server"],
   },
   {
+    id: 2,
     title: "Front-End Web Developer",
     company: "Freelance",
     employmentDate: "April 2022 - July 2022",
@@ -180,32 +182,32 @@ function TechStack() {
   const [selectedCategory, setSelectedCategory] = useState('Front End');
 
   const categories = [
-    { text: 'Front End' },
-    { text: 'Back End' },
-    { text: 'Others' },
-    { text: 'All' },
+    { id: 1, text: 'Front End' },
+    { id: 2, text: 'Back End' },
+    { id: 3, text: 'Others' },
+    { id: 4, text: 'All' },
   ];
 
   const items = [
-    { category: 'Front End', name: 'HTML5', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/html5.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { category: 'Front End', name: 'CSS3', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/css3.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { category: 'Front End', name: 'Javascript', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/js.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { category: 'Back End', name: 'PHP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/php.svg", size: "h-16 w-16", bg: "bg-oxf-hover", },
-    { category: 'Back End', name: 'MySQL', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/mysql.svg", size: "h-20 w-20", bg: "bg-oxf-hover", },
-    { category: 'Front End', name: 'Bootstrap', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/bootstrap.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { category: 'Front End', name: 'JQuery', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/jquery.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { category: 'Back End', name: 'Laravel', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/laravel.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { category: 'Others', name: 'Xamarin', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/xamarin.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { category: 'Back End', name: 'C#', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/csharp.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { category: 'Back End', name: 'Java', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/java.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { category: 'Front End', name: 'React', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/react.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { category: 'Front End', name: 'Tailwind CSS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/tailwind.svg", size: "h-16 w-16", bg: "bg-oxf-hover", },
-    { category: 'Others', name: 'Git', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/git.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { category: 'Others', name: 'GitHub', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/github.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { category: 'Others', name: 'GIMP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/gimp.svg", size: "h-14 w-14", bg: "bg-b", },
-    { category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
-    { category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { category: 'Back End', name: 'SQLite', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/sqlite.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 1, category: 'Front End', name: 'HTML5', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/html5.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 2, category: 'Front End', name: 'CSS3', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/css3.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 3, category: 'Front End', name: 'Javascript', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/js.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 4, category: 'Back End', name: 'PHP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/php.svg", size: "h-16 w-16", bg: "bg-oxf-hover", },
+    { id: 5, category: 'Back End', name: 'MySQL', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/mysql.svg", size: "h-20 w-20", bg: "bg-oxf-hover", },
+    { id: 6, category: 'Front End', name: 'Bootstrap', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/bootstrap.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 7, category: 'Front End', name: 'JQuery', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/jquery.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 8, category: 'Back End', name: 'Laravel', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/laravel.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 9, category: 'Others', name: 'Xamarin', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/xamarin.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 10, category: 'Back End', name: 'C#', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/csharp.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 11, category: 'Back End', name: 'Java', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/java.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 12, category: 'Front End', name: 'React', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/react.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 13, category: 'Front End', name: 'Tailwind CSS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/tailwind.svg", size: "h-16 w-16", bg: "bg-oxf-hover", },
+    { id: 14, category: 'Others', name: 'Git', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/git.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 15, category: 'Others', name: 'GitHub', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/github.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 16, category: 'Others', name: 'GIMP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/gimp.svg", size: "h-14 w-14", bg: "bg-b", },
+    { id: 17, category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
+    { id: 18, category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 19, category: 'Back End', name: 'SQLite', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/sqlite.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
   ];
 
   const stackButtonClick = (category) => {

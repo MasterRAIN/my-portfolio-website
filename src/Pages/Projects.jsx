@@ -6,14 +6,15 @@ function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('Web');
 
   const categories = [
-    { text: 'Web' },
-    { text: 'Desktop' },
-    { text: 'Mobile' },
-    { text: 'Design' },
+    { id: 1, text: 'Web' },
+    { id: 2, text: 'Desktop' },
+    { id: 3, text: 'Mobile' },
+    { id: 4, text: 'Design' },
   ];
 
   const projects = [
     { // ----------------------------------------------------------------- Web
+      id: 1,
       title: 'Personal Portfolio',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
@@ -22,6 +23,7 @@ function Projects() {
       link: 'https://rainiercondebarbacena.netlify.app/',
     },
     {
+      id: 2,
       title: 'Transfer Releasing (Out)',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/online-trfout.webp",
@@ -30,6 +32,7 @@ function Projects() {
       link: '',
     },
     {
+      id: 3,
       title: 'TODO List',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/todo-list.webp",
@@ -38,6 +41,7 @@ function Projects() {
       link: 'https://rainier-todolist.netlify.app/',
     },
     {
+      id: 4,
       title: 'CCRAS Automation',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/ccras.webp",
@@ -46,6 +50,7 @@ function Projects() {
       link: '',
     },
     {
+      id: 5,
       title: 'Online MPV',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/online-mpv.webp",
@@ -54,6 +59,7 @@ function Projects() {
       link: '',
     },
     {
+      id: 6,
       title: 'COVIK Tabaco',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/covik-tabaco.webp",
@@ -62,6 +68,7 @@ function Projects() {
       link: '',
     },
     { // ----------------------------------------------------------------- Desktop
+      id: 7,
       title: 'Smart EOD Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/smart-eod.webp",
@@ -70,6 +77,7 @@ function Projects() {
       link: '',
     },
     {
+      id: 8,
       title: 'Customer Down File Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/downfile.webp",
@@ -78,6 +86,7 @@ function Projects() {
       link: '',
     },
     {
+      id: 9,
       title: 'Salary Deduction Posting',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/batch-posting.webp",
@@ -86,6 +95,7 @@ function Projects() {
       link: '',
     },
     { // ----------------------------------------------------------------- Mobile
+      id: 10,
       title: 'Transfer Releasing Android',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-trfout.webp",
@@ -94,6 +104,7 @@ function Projects() {
       link: '',
     },
     {
+      id: 11,
       title: 'Mobile Price Verifier',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-mpv.webp",
@@ -102,6 +113,7 @@ function Projects() {
       link: '',
     },
     {
+      id: 12,
       title: 'Tic Tac Toe Game',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/tic-tac-toe.webp",
@@ -110,6 +122,7 @@ function Projects() {
       link: '',
     }, 
     { // ----------------------------------------------------------------- Design
+      id: 13,
       title: 'PRIMOZ Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.webp",
@@ -118,6 +131,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.svg",
     },
     {
+      id: 14,
       title: '60th Birthday Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.webp",
@@ -126,6 +140,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.svg",
     },
     {
+      id: 15,
       title: 'Game Avatar',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/master-rain.webp",
@@ -134,6 +149,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/master-rain.png",
     },
     {
+      id: 16,
       title: 'BAPA Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/bapa-logo.webp",
