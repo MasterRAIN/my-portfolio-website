@@ -31,7 +31,7 @@ const jobExperiences = [
 ];
   
 function Work() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
   const [age, setAge] = useState("");
   const yearOfBirth = 1997;
 
@@ -57,13 +57,13 @@ function Work() {
 
   useEffect(() => {
     const handleResize = debounce(() => {
-      setIsMobile(window.innerWidth <= 768);
-    }, 200); // Debounce time in milliseconds
+      setIsMobile(window.innerWidth <= 1024);
+    }); // Debounce time in milliseconds
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [setIsMobile]);
+  }, []);
 
   const debounce = (func, delay) => {
     let timer;
@@ -87,39 +87,39 @@ function Work() {
       </Reveal>
       <br />
       {isMobile ? (
-        <div className="px-6 flex">
+        <div className="md:px-40 xs:px-6 flex">
           <div className="min-h-screen my-5 border border-oxford dark:border-b transition-colors duration-300"></div>
           <div className="relative pb-6">
           {jobExperiences.map((experience, index) => {
             return (
-            <div key={index} className={`flex items-start gap-2`}>
+            <div key={index} className={`flex items-start md:gap-10 xs:gap-2`}>
               <span className={`flex items-center justify-center w-6 h-6 mt-4 -ml-3 rounded-full text-heat dark:text-pro ring-8 ring-white dark:ring-h bg-white dark:bg-g backdrop-blur bg-opacity-25 dark:bg-opacity-25 transition-all duration-300`}>
                 <ion-icon name="briefcase"></ion-icon>
               </span>
-              <div className={`w-full`}>
-              <Reveal axis="x" distance={-50}>
-                <div className="rounded-lg p-3 backdrop-blur bg-opacity-25 dark:bg-opacity-25">
-                  <h1 className="text-2xl my-name">{experience.title}</h1>
-                  <p className="font-black">
-                    {experience.website ? (
-                      <a href={experience.website} target="_blank" rel="noopener noreferrer" className="text-oxford dark:text-b transition-all duration-300">
-                        {experience.company}
-                      </a>
-                    ) : (
-                      experience.company
-                    )} | {" "}
-                    <span className={experience.employmentDate.includes("Present") ? "text-heat dark:text-pro transition-all duration-300" : ""}>
-                      {experience.employmentDate}
-                    </span>
-                  </p>
-                  <ul className="text-sm text-oxford dark:text-b font-medium mt-2 ml-4 list-disc transition-all duration-300">
-                    {experience.responsibilities.map((responsibility, idx) => (
-                    <li key={idx} className="mb-0.5">{responsibility}</li>
-                    ))}
-                    <li className="mb-0.5">Skills : {experience.skills.join(" · ")}</li>
-                  </ul>
-                </div>
-              </Reveal>
+              <div className="w-full">
+                <Reveal axis="x" distance={-50}>
+                  <div className="rounded-lg p-3 backdrop-blur bg-opacity-25 dark:bg-opacity-25">
+                    <h1 className="text-2xl my-name">{experience.title}</h1>
+                    <p className="font-black">
+                      {experience.website ? (
+                        <a href={experience.website} target="_blank" rel="noopener noreferrer" className="text-oxford dark:text-b transition-all duration-300">
+                          {experience.company}
+                        </a>
+                      ) : (
+                        experience.company
+                      )} | {" "}
+                      <span className={experience.employmentDate.includes("Present") ? "text-heat dark:text-pro transition-all duration-300" : ""}>
+                        {experience.employmentDate}
+                      </span>
+                    </p>
+                    <ul className="text-sm text-oxford dark:text-b font-medium mt-2 ml-4 list-disc text-justify transition-all duration-300">
+                      {experience.responsibilities.map((responsibility, idx) => (
+                      <li key={idx} className="mb-0.5">{responsibility}</li>
+                      ))}
+                      <li className="mb-0.5">Skills : {experience.skills.join(" · ")}</li>
+                    </ul>
+                  </div>
+                </Reveal>
               </div>
             </div>
             );
@@ -127,7 +127,7 @@ function Work() {
           </div>
         </div>
       ) : (
-        <div className="relative h-fit px-40">
+        <div className="relative h-fit xxl:px-40 xl:px-20 lg:px-10">
           <div className="absolute left-1/2 border border-oxford dark:border-b h-full m-auto transition-colors duration-300"></div>
           <div className="relative wrap overflow-hidden md:pb-10 md:px-0">
           {jobExperiences.map((experience, index) => {
@@ -139,34 +139,34 @@ function Work() {
 
             return (
             <div key={index} className={`flex md:justify-between items-center w-full md:flex-row-reverse left-timeline`}>
-              <div className={`${orderClass1} md:w-5/12`}></div>
+              <div className={`${orderClass1} xl:w-5/12 md:w-6/12`}></div>
               <span className={`flex items-center ${orderClass2} justify-center w-6 h-6 md:w-9 md:h-9 rounded-full text-heat dark:text-pro ring-4 md:ring-8 ring-white dark:ring-h bg-white dark:bg-g backdrop-blur bg-opacity-25 dark:bg-opacity-25 transition-all duration-300`}>
                 <ion-icon name="briefcase"></ion-icon>
               </span>
-              <div className={`${orderClass3} w-full ml-3 md:ml-0 md:w-5/12 md:px-4 md:py-4`}>
-              <Reveal axis="x" distance={hiddenDistance} delay={0.2}>
-                <div className="rounded-lg p-3 backdrop-blur bg-opacity-25 dark:bg-opacity-25">
-                  <h1 className="text-2xl my-name">{experience.title}</h1>
-                  <p className="font-black">
-                    {experience.website ? (
-                      <a href={experience.website} target="_blank" rel="noopener noreferrer" className="text-oxford dark:text-b transition-all duration-300">
-                        {experience.company}
-                      </a>
-                    ) : (
-                      experience.company
-                    )} | {" "}
-                    <span className={experience.employmentDate.includes("Present") ? "text-heat dark:text-pro transition-all duration-300" : ""}>
-                      {experience.employmentDate}
-                    </span>
-                  </p>
-                  <ul className="text-sm text-oxford dark:text-b font-medium mt-2 ml-4 list-disc transition-all duration-300">
-                    {experience.responsibilities.map((responsibility, idx) => (
-                    <li key={idx} className="mb-0.5">{responsibility}</li>
-                    ))}
-                    <li className="mb-0.5">Skills : {experience.skills.join(" · ")}</li>
-                  </ul>
-                </div>
-              </Reveal>
+              <div className={`${orderClass3} w-full ml-3 md:ml-0 xl:w-5/12 md:w-6/12 md:px-4 md:py-4`}>
+                <Reveal axis="x" distance={hiddenDistance} delay={0.2}>
+                  <div className="rounded-lg p-3 backdrop-blur bg-opacity-25 dark:bg-opacity-25">
+                    <h1 className="text-2xl my-name">{experience.title}</h1>
+                    <p className="font-black">
+                      {experience.website ? (
+                        <a href={experience.website} target="_blank" rel="noopener noreferrer" className="text-oxford dark:text-b transition-all duration-300">
+                          {experience.company}
+                        </a>
+                      ) : (
+                        experience.company
+                      )} | {" "}
+                      <span className={experience.employmentDate.includes("Present") ? "text-heat dark:text-pro transition-all duration-300" : ""}>
+                        {experience.employmentDate}
+                      </span>
+                    </p>
+                    <ul className="text-sm text-oxford dark:text-b font-medium mt-2 ml-4 text-justify list-disc transition-all duration-300">
+                      {experience.responsibilities.map((responsibility, idx) => (
+                      <li key={idx} className="mb-0.5">{responsibility}</li>
+                      ))}
+                      <li className="mb-0.5">Skills : {experience.skills.join(" · ")}</li>
+                    </ul>
+                  </div>
+                </Reveal>
               </div>
             </div>
             );
@@ -244,7 +244,7 @@ function TechStack() {
       <br />
       <br />
       <div className="grid place-content-center">
-        <div className="grid lg:grid-cols-5 lg:gap-5 xs:grid-cols-3 xs:gap-5">
+        <div className="grid lg:grid-cols-5 md:grid-cols-4 lg:gap-5 xs:grid-cols-3 xs:gap-5">
           {items.filter((item) => selectedCategory === null || item.category === selectedCategory).map((item) => (
             <Reveal distance={50} key={item.id}>
               <div className="lg:h-40 lg:w-40 xs:w-24 flex flex-col gap-3 items-center justify-center">
