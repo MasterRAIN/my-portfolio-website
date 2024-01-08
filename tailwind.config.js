@@ -33,8 +33,11 @@ module.exports = {
         'xs': '350px',
         'sm': '640px',
         'md': '768px',
+        'mdlg': '965px',
         'lg': '1024px',
+        'lgr': '1140px',
         'xl': '1280px',
+        'xxl': '1400px',
       },
       width: {
         'form': '500px',

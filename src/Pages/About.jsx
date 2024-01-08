@@ -74,18 +74,18 @@ function MyBackground() {
           subtextColor="text-heat dark:text-pro"
         />
       </Reveal>
-      <div className="lg:flex lg:py-10 lg:px-40">
+      <div className="lg:flex md:py-10 xxl:px-40 xl:px-20 lg:px-10">
         <div className="flex-auto"></div>
-        <div className="lg:w-3/5 py-5">
+        <div className="lg:w-3/5 py-5 lg:px-4 md:px-40 xs:px-4">
           <Reveal axis="x" delay={0.2}>
-            <h1 className="text-2xl my-name px-4 lg:text-left text-center">{aboutInfo.name}</h1>
+            <h1 className="text-2xl my-name lg:text-left text-center">{aboutInfo.name}</h1>
           </Reveal>
           <Reveal axis="x" delay={0.2}>
-            <h1 className="font-black px-4 lg:text-left text-center">{aboutInfo.title}</h1>
+            <h1 className="font-black lg:text-left text-center">{aboutInfo.title}</h1>
           </Reveal>
           <br />
           <Reveal axis="x" delay={0.2}>
-            <p className="leading-relaxed text-sm font-medium px-4 lg:text-left text-justify">
+            <p className="leading-relaxed text-sm font-medium text-justify">
               {aboutInfo.description.split('LCC Malls').map((text, index, array) => (
                 index === array.length - 1 ? (
                   text
@@ -108,19 +108,19 @@ function MyBackground() {
           <br />
           <Reveal axis="x" delay={0.2}>
             {aboutInfo.personals.map((personal, index) => (
-              <h1 key={index} className="text-sm text-f font-medium px-4">{personal}</h1>
+              <h1 key={index} className="text-sm text-f font-medium">{personal}</h1>
             ))}
           </Reveal>
           <br />
           <Reveal axis="x" delay={0.2}>
-            <p className="text-oxford dark:text-b transition-colors duration-300 px-4 lg:text-left text-center">
+            <p className="text-oxford dark:text-b transition-colors duration-300 lg:text-left text-center">
               {aboutInfo.qoutes[0]}<span className="text-heat dark:text-pro transition-colors duration-300">{aboutInfo.qoutes[1]}</span>
             </p>
           </Reveal>
           <br />
           <Reveal axis="x" delay={0.2}>
             <div className="flex justify-center lg:justify-start">
-              <div className="w-fit px-4 py-2">
+              <div className="w-fit py-2">
                 <button onClick={handleClick} className="know-more flex items-center gap-2 rounded-full border border-oxford dark:border-g bg-oxford hover:bg-oxf-hover text-white px-8 py-3 font-bold dark:bg-g dark:hover:bg-h transition-colors duration-300">
                   Resume
                   <ion-icon
@@ -178,26 +178,30 @@ function MyEducation() {
           subtextColor="text-pro"
         />
       </Reveal>
-      <div className="lg:flex py-10 lg:py-16 lg:px-40">
+      <div className="lg:flex py-10 lg:py-16 xxl:px-40 xl:px-20 lg:px-10 md:px-40 pb-20">
         <div className="flex-auto"></div>
         <div className="lg:w-3/5 px-4 grid grid-cols-2 gap-8">
-          <div className="lg:h-52 shadow-md ring-1 rounded-lg lg:flex col-span-2 overflow-hidden transition-colors duration-300">
+          <div className="mdlg:h-52 shadow-md ring-1 rounded-lg mdlg:flex col-span-2 overflow-hidden transition-colors duration-300">
             <img className="lg:h-full" src={process.env.PUBLIC_URL + "/Images/PITA.webp"} alt="PITA Building" loading="lazy" />
             {schools[0].college.map((item) => (
-            <div key={item.degree} className="px-6 py-5">
-              <Reveal axis="x"><h1 className="text-pro text-xl my-name">{item.degree}</h1></Reveal>
-              <Reveal axis="x"><h1 className="text-md my-name">{item.name}</h1></Reveal>
-              <Reveal axis="x"><h1 className="text-sm font-medium">{item.location}</h1></Reveal>
-              <Reveal axis="x"><h1 className="w-fit text-sm text-f border rounded px-2 py-1 mt-2">{item.sy}</h1></Reveal>
+            <div className="overflow-auto">
+              <div key={item.degree} className="px-6 py-5">
+                <Reveal axis="x"><h1 className="text-pro text-xl my-name">{item.degree}</h1></Reveal>
+                <Reveal axis="x"><h1 className="text-md my-name">{item.name}</h1></Reveal>
+                <Reveal axis="x"><h1 className="text-sm font-medium">{item.location}</h1></Reveal>
+                <Reveal axis="x"><h1 className="w-fit text-sm text-f border rounded px-2 py-1 mt-2">{item.sy}</h1></Reveal>
+              </div>
             </div>
             ))}
           </div>
           {schools[0].basic.map((item, index) => (
-            <div key={index} className="h-36 px-6 py-5 shadow-md ring-1 rounded-lg lg:col-span-1 xs:col-span-2 transition-colors duration-300">
-              <Reveal axis="x"><h1 className="text-md my-name">{item.name}</h1></Reveal>
-              <Reveal axis="x"><h1 className="text-a text-sm font-medium">{item.location}</h1></Reveal>
-              <Reveal axis="x"><h1 className="text-pro text-sm my-name">{item.award}</h1></Reveal>
-              <Reveal axis="x"><h1 className="w-fit text-sm text-f border rounded px-2 py-1 mt-2">{item.sy}</h1></Reveal>
+            <div className="shadow-md ring-1 rounded-lg lg:col-span-1 xs:col-span-2 transition-colors duration-300">
+              <div key={index} className="h-36 px-6 py-5 overflow-auto">
+                <Reveal axis="x"><h1 className="text-md my-name">{item.name}</h1></Reveal>
+                <Reveal axis="x"><h1 className="text-a text-sm font-medium">{item.location}</h1></Reveal>
+                <Reveal axis="x"><h1 className="text-pro text-sm my-name">{item.award}</h1></Reveal>
+                <Reveal axis="x"><h1 className="w-fit text-sm text-f border rounded px-2 py-1 mt-2">{item.sy}</h1></Reveal>
+              </div>
             </div>
           ))}
         </div>
@@ -213,7 +217,7 @@ function About() {
       <MyBackground />
       <Link to="educationSection" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50}>
         <div className="flex justify-center">
-          <img className="lg:fixed left-60 top-52 w-80 mb-10 selfie-img rounded-xl cursor-pointer" src={process.env.PUBLIC_URL + "/Images/grad_pic.webp"} alt="" loading="lazy" />
+          <img className="lg:fixed xxl:left-60 xl:left-40 lg:left-20 md:left-16 top-52 w-80 mb-10 selfie-img rounded-xl cursor-pointer z-10" src={process.env.PUBLIC_URL + "/Images/grad_pic.webp"} alt="" loading="lazy" />
         </div>
       </Link>
       <MyEducation />
