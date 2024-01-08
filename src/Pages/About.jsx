@@ -76,7 +76,7 @@ function MyBackground() {
       </Reveal>
       <div className="lg:flex md:py-10 xxl:px-40 xl:px-20 lg:px-10">
         <div className="flex-auto"></div>
-        <div className="lg:w-3/5 py-5 lg:px-4 md:px-40 xs:px-4">
+        <div className="lg:w-3/5 py-5 lg:px-4 md:px-40 sm:px-20 xs:px-4">
           <Reveal axis="x" delay={0.2}>
             <h1 className="text-2xl my-name lg:text-left text-center">{aboutInfo.name}</h1>
           </Reveal>
@@ -178,7 +178,7 @@ function MyEducation() {
           subtextColor="text-pro"
         />
       </Reveal>
-      <div className="lg:flex py-10 lg:py-16 xxl:px-40 xl:px-20 lg:px-10 md:px-40 pb-20">
+      <div className="lg:flex py-10 lg:py-16 xxl:px-40 xl:px-20 lg:px-10 md:px-40 sm:px-20 pb-20">
         <div className="flex-auto"></div>
         <div className="lg:w-3/5 px-4 grid grid-cols-2 gap-8">
           <div className="mdlg:h-52 shadow-md ring-1 rounded-lg mdlg:flex col-span-2 overflow-hidden transition-colors duration-300">

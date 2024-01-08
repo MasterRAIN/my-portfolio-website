@@ -42,11 +42,11 @@ function Home() {
           loading="lazy"
         />
       </div>
-      <div className="md:flex justify-center gap-3 xs:text-center md:text-6xl xs:text-4xl font-black md:py-6 my-name transition-colors duration-300">
+      <div className="sm:flex justify-center gap-3 xs:text-center md:text-6xl sm:text-5xl xs:text-4xl font-black sm:py-6 my-name transition-colors duration-300">
         <span><Reveal distance={50}>Hi, My name is </Reveal></span>
         <span className="text-heat dark:text-pro transition-colors duration-300"><Reveal axis="x">Rainier</Reveal></span>
       </div>
-      <div className="md:flex justify-center gap-3 xs:text-center md:text-4xl xs:text-lg md:pb-8 transition-colors duration-300">
+      <div className="sm:flex justify-center gap-3 xs:text-center md:text-4xl sm:text-3xl xs:text-lg sm:pb-8 transition-colors duration-300">
         <span><Reveal axis="x" distance={50}>I am into</Reveal></span>
         <span key={currentJobIndex} className="text-oxford dark:text-b font-black transition-colors duration-300">
           <Reveal distance={-50}>

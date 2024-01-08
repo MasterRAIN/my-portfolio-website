@@ -87,7 +87,7 @@ function Work() {
       </Reveal>
       <br />
       {isMobile ? (
-        <div className="md:px-40 xs:px-6 flex">
+        <div className="md:px-40 sm:px-20 xs:px-6 flex">
           <div className="min-h-screen my-5 border border-oxford dark:border-b transition-colors duration-300"></div>
           <div className="relative pb-6">
           {jobExperiences.map((experience, index) => {
@@ -247,7 +247,7 @@ function TechStack() {
         <div className="grid lg:grid-cols-5 md:grid-cols-4 xs:grid-cols-3 md:gap-0 gap-4">
           {items.filter((item) => selectedCategory === null || item.category === selectedCategory).map((item) => (
             <Reveal distance={50} key={item.id}>
-              <div className="md:h-40 md:w-40 xs:w-24 flex flex-col gap-3 items-center justify-center">
+              <div className="sm:h-40 sm:w-40 xs:w-24 flex flex-col gap-3 items-center justify-center">
                 <div className={`h-24 w-24 grid place-content-center rounded-full ${item.bg}`}>
                   <img className={item.size} src={item.logo} alt="" loading="lazy" />
                 </div>

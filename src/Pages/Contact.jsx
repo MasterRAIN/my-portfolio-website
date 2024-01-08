@@ -18,7 +18,7 @@ function Contact() {
         </Reveal>
         <br />
         <Reveal distance={50} delay={0.2}>
-          <div className="flex justify-center my-3 xs:px-4 md:px-40">
+          <div className="flex justify-center my-3 xs:px-4 md:px-40 sm:px-20">
             <div className="xs:w-full lg:w-fit flex gap-12 rounded-md form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 xs:px-4 md:px-8 py-8">
               <div className="grid place-content-center md:block xs:hidden">
                 <img className="h-72" src={process.env.PUBLIC_URL + "/Images/contact.svg"} alt="Contact Picture" loading="lazy" />
