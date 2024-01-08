@@ -244,10 +244,10 @@ function TechStack() {
       <br />
       <br />
       <div className="grid place-content-center">
-        <div className="grid lg:grid-cols-5 md:grid-cols-4 lg:gap-5 xs:grid-cols-3 xs:gap-5">
+        <div className="grid lg:grid-cols-5 md:grid-cols-4 xs:grid-cols-3 md:gap-0 gap-4">
           {items.filter((item) => selectedCategory === null || item.category === selectedCategory).map((item) => (
             <Reveal distance={50} key={item.id}>
-              <div className="lg:h-40 lg:w-40 xs:w-24 flex flex-col gap-3 items-center justify-center">
+              <div className="md:h-40 md:w-40 xs:w-24 flex flex-col gap-3 items-center justify-center">
                 <div className={`h-24 w-24 grid place-content-center rounded-full ${item.bg}`}>
                   <img className={item.size} src={item.logo} alt="" loading="lazy" />
                 </div>
