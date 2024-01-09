@@ -143,6 +143,7 @@ function MyEducation() {
     {
       college: [
         {
+          id: 1,
           degree: 'Bachelor of Science in Information Technology',
           name: 'Polytechnic Institute of Tabaco',
           location: '100 Panal, Tabaco City',
@@ -151,12 +152,14 @@ function MyEducation() {
       ],
       basic: [
         {
+          id: 2,
           name: 'Joroan National High School',
           location: 'Joroan, Tiwi, Albay',
           award: 'Salutatorian',
           sy: '2011 - 2015',
         },
         {
+          id: 3,
           name: 'Joroan Elementary School',
           location: 'Joroan, Tiwi, Albay',
           award: 'Salutatorian',
@@ -184,7 +187,7 @@ function MyEducation() {
           <div className="mdlg:h-52 shadow-md ring-1 rounded-lg mdlg:flex col-span-2 overflow-hidden transition-colors duration-300">
             <img className="lg:h-full" src={process.env.PUBLIC_URL + "/Images/PITA.webp"} alt="PITA Building" loading="lazy" />
             {schools[0].college.map((item) => (
-            <div className="overflow-auto">
+            <div key={item.id} className="overflow-auto">
               <div key={item.degree} className="px-6 py-5">
                 <Reveal axis="x"><h1 className="text-pro text-xl my-name">{item.degree}</h1></Reveal>
                 <Reveal axis="x"><h1 className="text-md my-name">{item.name}</h1></Reveal>
@@ -195,7 +198,7 @@ function MyEducation() {
             ))}
           </div>
           {schools[0].basic.map((item, index) => (
-            <div className="shadow-md ring-1 rounded-lg lg:col-span-1 xs:col-span-2 transition-colors duration-300">
+            <div key={item.id} className="shadow-md ring-1 rounded-lg lg:col-span-1 xs:col-span-2 transition-colors duration-300">
               <div key={index} className="h-36 px-6 py-5 overflow-auto">
                 <Reveal axis="x"><h1 className="text-md my-name">{item.name}</h1></Reveal>
                 <Reveal axis="x"><h1 className="text-a text-sm font-medium">{item.location}</h1></Reveal>

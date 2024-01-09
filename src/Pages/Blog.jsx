@@ -3,27 +3,45 @@ import React, { useState } from 'react';
 const postsData = [
   {
     title: 'Unleashing the Power of PHP: A Comprehensive Guide to Writing Code with PHP',
-    date: 'October 21, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/php.webp',
+    date: 'October 1, 2023',
+    imageUrl: process.env.PUBLIC_URL + '/Images/Blogs/php.webp',
     content: 'PHP, a versatile and widely-used server-side scripting language, has been the backbone of dynamic web development for decades.',
   },
   {
     title: 'The Art and Science of Responsive Web Design',
-    date: 'October 22, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/responsive.webp',
+    date: 'November 16, 2023',
+    imageUrl: process.env.PUBLIC_URL + '/Images/Blogs/responsive.webp',
     content: 'In our ever-evolving digital landscape, the way we access information has undergone a profound transformation.',
   },
   {
     title: 'Crafting Dynamic User Interfaces: Writing Code with React',
-    date: 'October 19, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/react_code.webp',
+    date: 'December 1, 2023',
+    imageUrl: process.env.PUBLIC_URL + '/Images/Blogs/react_code.webp',
     content: 'React, a popular JavaScript library developed by Facebook, has revolutionized the way we build user interfaces for web applications.',
   },
   {
     title: 'Unveiling the Power of MySQL: A Comprehensive Guide to Database Management',
-    date: 'October 20, 2023',
-    imageUrl: process.env.PUBLIC_URL + '/Images/mysql.webp',
+    date: 'December 20, 2023',
+    imageUrl: process.env.PUBLIC_URL + '/Images/Blogs/mysql.webp',
     content: 'Databases are the backbone of modern software applications, enabling the storage, retrieval, and management of vast amounts of data.',
+  },
+  {
+    title: 'Mastering JavaScript: Your Guide to Building Awesome Websites',
+    date: 'January 1, 2024',
+    imageUrl: process.env.PUBLIC_URL + '/Images/Blogs/js.webp',
+    content: 'JavaScript continues to evolve, and staying up-to-date with its latest features and best practices is crucial for web developers.',
+  },
+  {
+    title: 'Unveiling the Magic of C#: A Developer\'s Journey',
+    date: 'January 5, 2024',
+    imageUrl: process.env.PUBLIC_URL + '/Images/Blogs/csharp.webp',
+    content: 'Welcome to the world of C# (pronounced C-sharp), a powerful and versatile programming language developed by Microsoft.',
+  },
+  {
+    title: 'Xamarin Mastery: Crafting Seamless Cross-Platform Mobile Experiences',
+    date: 'January 9, 2024',
+    imageUrl: process.env.PUBLIC_URL + '/Images/Blogs/xamarin.webp',
+    content: 'A powerful cross-platform development framework that allows you to build native mobile applications for iOS, Android, and Windows using a single codebase.',
   },
 ];
 
