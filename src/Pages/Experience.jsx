@@ -15,7 +15,7 @@ const jobExperiences = [
       "Enhanced, modified, repaired and expanded existing software and generic applications.",
       "Regular bug solving and feature development.",
     ],
-    skills: ["HTML", "CSS", "Javascript", "PHP", "Laravel", "MySQL", "C#", "Xamarin", "VB.NET", "MSSQL Server"],
+    skills: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "C#", "Xamarin", "SQLite"],
   },
   {
     id: 2,
