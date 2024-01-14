@@ -9,7 +9,7 @@ function Footer() {
   ];
   const currentYear = new Date().getFullYear();
   const socialMedia = [
-    { name: 'LinkedIn', icon: 'logo-linkedin', link: 'https://www.linkedin.com/in/rainier-barbacena-9a095a296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+    { name: 'LinkedIn', icon: 'logo-linkedin', link: 'https://www.linkedin.com/in/rainier-barbacena' },
     { name: 'GitHub', icon: 'logo-github', link: 'https://github.com/MasterRAIN' },
     { name: 'Facebook', icon: 'logo-facebook', link: 'https://web.facebook.com/rainier.barbacena/' },
     { name: 'Discord', icon: 'logo-discord', link: 'https://discord.com/users/masterrain26' },
