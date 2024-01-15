@@ -58,7 +58,7 @@ code {
   Facebook Badge
 */
 .fb-badge {
-  height: 256px;
+  height: auto;
   width: 332px;
   border-radius: 10px;
   overflow: hidden;

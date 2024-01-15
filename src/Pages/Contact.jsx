@@ -1,24 +1,28 @@
-import React, { useEffect } from 'react';
 import Reveal from '../Components/Reveal';
 import PageSectionHeader from '../Components/PageSectionHeader';
+import LinkProfileBadge from '../Components/LinkProfileBadge';
 
 function Contact() {
 
-  useEffect(() => {
-    // Load the LinkedIn badge script dynamically
-    const script = document.createElement('script');
-    script.src = 'https://platform.linkedin.com/badges/js/profile.js';
-    script.async = true;
-    script.defer = true;
-    script.type = 'text/javascript';
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
-  const facebookProfileUrl = 'https://web.facebook.com/rainier.barbacena';
+  const badgeData = [
+    {
+      profileUrl: 'https://www.linkedin.com/in/rainier-barbacena',
+      name: 'Rainier Barbacena',
+      description1: 'Programmer/Application Developer',
+      description2: 'LCC Group of Companies',
+      imageUrl: '/Images/fb-dp.jpg',
+      logoUrl: '/Images/linkedin-logo.png',
+    },
+    {
+      profileUrl: 'https://web.facebook.com/rainier.barbacena',
+      name: 'Rainier Barbacena',
+      description1: '3.3K friends',
+      description2: 'Joined February 2013',
+      imageUrl: '/Images/fb-dp.jpg',
+      logoUrl: '/Images/facebook-logo.png',
+    },
+    // Add more badge data as needed
+  ];
 
   return (
     <>
@@ -35,7 +39,15 @@ function Contact() {
           />
         </Reveal>
         <br />
-        <div className="flex flex-row gap-10 md:px-40 sm:px-20 xs:px-6">
+        <div className="md:px-40 sm:px-20 xs:px-6 my-3">
+          <Reveal distance={50} delay={0.2}>
+            <div className="flex md:flex-row justify-center gap-12 my-3">
+                {badgeData.map((badge, index) => (
+                  <LinkProfileBadge key={index} {...badge} />
+                ))}
+            </div>
+          </Reveal>
+          <br />
           <div className="flex-1">
             <Reveal distance={50} delay={0.2}>
               <div className="flex justify-center my-3">
@@ -85,24 +97,6 @@ function Contact() {
               <Reveal>
                 <h1 className="text-h dark:text-aa font-bold underline">rainierbarbacena@gmail.com</h1>
               </Reveal>
-            </div>
-          </div>
-          <div>
-            <div className="badge-base LI-profile-badge my-3" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="rainier-barbacena-9a095a296" data-version="v1">
-              <a className="badge-base__link LI-simple-link" href="https://ph.linkedin.com/in/rainier-barbacena-9a095a296?trk=profile-badge"></a>
-            </div>
-            <div className="fb-badge bg-white shadow">
-              <div className="badge-head flex gap-1 px-4 items-center">
-                <img className="h-5" src={process.env.PUBLIC_URL + "/Images/fb-logo.png"} alt="fb-logo" loading="lazy" />
-                <img className="h-4" src={process.env.PUBLIC_URL + "/Images/facebook.png"} alt="facebook" loading="lazy" />
-              </div>
-              <div className="p-4">
-                <img className="h-14 rounded-full" src={process.env.PUBLIC_URL + "/Images/fb-dp.jpg"} alt="facebook" loading="lazy" />
-                <h1 className="pt-3 font-sans text-black font-semibold hover:underline"><a href={facebookProfileUrl} target="_blank" rel="noopener noreferrer">Rainier Barbacena</a></h1>
-                <h1 className="pt-1 font-sans text-black text-sm">3.3K friends</h1>
-                <h1 className="pt-1 pb-2 font-sans text-black text-xs">Joined February 2013</h1>
-                <button className="font-sans px-4 py-1 rounded-full border"><a href={facebookProfileUrl} target="_blank" rel="noopener noreferrer">View profile</a></button>
-              </div>
             </div>
           </div>
         </div>
