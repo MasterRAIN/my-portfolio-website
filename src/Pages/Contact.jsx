@@ -10,7 +10,7 @@ function Contact() {
       name: 'Rainier Barbacena',
       description1: 'Programmer/Application Developer',
       description2: 'LCC Group of Companies',
-      imageUrl: '/Images/fb-dp.jpg',
+      imageUrl: '/Images/linkedin-dp.jpg',
       logoUrl: '/Images/linkedin-logo.png',
     },
     {
