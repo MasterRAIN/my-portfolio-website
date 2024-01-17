@@ -10,7 +10,7 @@ function Contact() {
       name: 'Rainier Barbacena',
       description1: 'Programmer/Application Developer',
       description2: 'LCC Group of Companies',
-      imageUrl: '/Images/linkedin-dp.jpg',
+      imageUrl: '/Images/linkedin-dp.webp',
       logoUrl: '/Images/linkedin-logo.png',
     },
     {
@@ -18,7 +18,7 @@ function Contact() {
       name: 'Rainier Barbacena',
       description1: '3.3K friends',
       description2: 'Joined February 2013',
-      imageUrl: '/Images/fb-dp.jpg',
+      imageUrl: '/Images/fb-dp.webp',
       logoUrl: '/Images/facebook-logo.png',
     },
     // Add more badge data as needed

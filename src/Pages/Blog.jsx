@@ -64,7 +64,7 @@ function Posts() {
       <div className="w-7/12">
         {randomPosts.map((random, index) => (
           <a href="" key={index}>
-            <div className="mb-10 p-6 rounded-xl backdrop-blur bg-opacity-25 dark:bg-opacity-25 shadow-md hover:scale-105 transition-all duration-300 post-card">
+            <div className="mb-10 p-6 rounded-xl backdrop-blur bg-opacity-25 dark:bg-opacity-25 shadow-md transition-all duration-300 post-card">
               <img className="h-form rounded-xl object-cover" src={random.imageUrl} alt="" loading="lazy" />
               <br />
               <h2 className="text-xl font-bold text-black dark:text-white post-title">{random.title}</h2>
@@ -83,7 +83,7 @@ function Posts() {
       <div className="w-5/12">
         {randomPosts2.map((random2, index) => (
           <a href="" key={index}>
-            <div className="mb-10 p-6 backdrop-blur bg-opacity-25 dark:bg-opacity-25 rounded-xl shadow-md hover:scale-105 transition-all duration-300 post-card">
+            <div className="mb-10 p-6 backdrop-blur bg-opacity-25 dark:bg-opacity-25 rounded-xl shadow-md transition-all duration-300 post-card">
               <img className="rounded-xl object-cover" src={random2.imageUrl} alt="" loading="lazy" />
               <br />
               <h2 className="text-xl font-bold text-black dark:text-white post-title">{random2.title}</h2>
@@ -149,7 +149,7 @@ function TrendingPosts() {
           <a href="#" key={index}>
             <div className="flex gap-2 items-center mb-8 mr-2 post-card2">
               <div className="w-full">
-                <h2 className="text-sm text-black font-bold post-title2">{trending.title}</h2>
+                <h2 className="text-sm text-black dark:text-white font-bold post-title2">{trending.title}</h2>
                 <h1>
                   <div className="flex align-center text-xs text-b">
                     <ion-icon name="calendar" class="h-3 w-3 mr-2"></ion-icon>
