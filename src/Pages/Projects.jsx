@@ -191,7 +191,7 @@ function Projects() {
             </div>
           </Reveal>
         </div>
-        <div className="grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 py-10 md:px-40 sm:px-20 p-3">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 py-10 md:px-40 sm:px-20 p-3 md:mb-10">
           {projects.filter((project) => selectedCategory === null || project.category === selectedCategory).map((project) => (
             <Reveal distance={50} delay={0.2} key={project.id}>
               <div className="rounded-lg form-shadow group bg-oxford dark:bg-g text-white overflow-hidden">

@@ -39,6 +39,7 @@ function Contact() {
           />
         </Reveal>
         <br />
+        <br />
         <div className="md:px-40 sm:px-20 xs:px-6 my-3">
           <Reveal distance={50} delay={0.2}>
             <div className="flex md:flex-row xs:flex-col justify-center md:items-stretch xs:items-center gap-12 my-3">
