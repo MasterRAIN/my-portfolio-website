@@ -40,7 +40,7 @@ function Contact() {
         </Reveal>
         <br />
         <br />
-        <div className="md:px-40 sm:px-20 xs:px-6 my-3">
+        <div className="md:px-40 sm:px-20 xs:px-4 my-3">
           <Reveal distance={50} delay={0.2}>
             <div className="flex md:flex-row xs:flex-col justify-center md:items-stretch xs:items-center gap-12 my-3">
                 {badgeData.map((badge, index) => (
@@ -90,7 +90,7 @@ function Contact() {
                 </a>
               </Reveal>
             </div>
-            <div className="text-center lg:mb-20 xs:mb-36">
+            <div className="text-center lg:mb-20 xs:mb-52">
               <Reveal>
                 <h1 className="text-sm dark:text-a">Or email me directly at</h1>
               </Reveal>

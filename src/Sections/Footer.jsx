@@ -32,7 +32,17 @@ function Footer() {
       <footer className="w-full absolute">
         {isMobile ? (
           <div>
-            <div className="h-24 w-full -mt-24 text-xs p-2 bg-white dark:bg-g dark:text-a shadow-inner transition-colors duration-300">
+            <div className="h-36 w-full -mt-36 text-xs p-2 bg-white dark:bg-g dark:text-a shadow-inner transition-colors duration-300">
+              <div className="flex gap-8 justify-center p-3">
+                {techStack.map((tech, index) => (
+                  <img 
+                    key={index} 
+                    src={tech.src} 
+                    alt={tech.alt} 
+                    className={`${tech.size} ${tech.translate} dark:invert transition-all duration-300`}
+                  />
+                ))}
+              </div>
               <div className="flex gap-8 justify-center text-xl p-3">
                 {socialMedia.map((social, index) => (
                   <a 
