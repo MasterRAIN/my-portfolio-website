@@ -29,7 +29,7 @@ function Projects() {
       image: process.env.PUBLIC_URL + "/Images/Projects/weather-wise.webp",
       category: 'Web',
       stacks: ["React JS", "Tailwind CSS", "Netlify"],
-      link: '',
+      link: 'https://rainier-weatherapp.netlify.app/',
     },
     {
       id: 3,
