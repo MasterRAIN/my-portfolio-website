@@ -21,14 +21,14 @@ function Projects() {
       category: 'Web',
       stacks: ["React JS", "Tailwind CSS", "Netlify"],
       link: 'https://rainiercondebarbacena.netlify.app/',
-    },
+    },    
     {
       id: 2,
-      title: 'Transfer Releasing (Out)',
+      title: 'Weather App',
       icon: 'globe-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/online-trfout.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/weather-wise.webp",
       category: 'Web',
-      stacks: ["HTML,CSS", "CSS", "Javascript", "PHP", "MySQL"],
+      stacks: ["React JS", "Tailwind CSS", "Netlify"],
       link: '',
     },
     {
@@ -42,6 +42,15 @@ function Projects() {
     },
     {
       id: 4,
+      title: 'Transfer Releasing (Out)',
+      icon: 'globe-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/online-trfout.webp",
+      category: 'Web',
+      stacks: ["HTML,CSS", "CSS", "Javascript", "PHP", "MySQL"],
+      link: '',
+    },
+    {
+      id: 5,
       title: 'CCRAS Automation',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/ccras.webp",
@@ -50,7 +59,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Online MPV',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/online-mpv.webp",
@@ -59,7 +68,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 6,
+      id: 7,
       title: 'COVIK Tabaco',
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/covik-tabaco.webp",
@@ -68,7 +77,7 @@ function Projects() {
       link: '',
     },
     { // ----------------------------------------------------------------- Desktop
-      id: 7,
+      id: 8,
       title: 'Smart EOD Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/smart-eod.webp",
@@ -77,7 +86,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Customer Down File Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/downfile.webp",
@@ -86,7 +95,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 9,
+      id: 10,
       title: 'Salary Deduction Posting',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/batch-posting.webp",
@@ -95,7 +104,7 @@ function Projects() {
       link: '',
     },
     { // ----------------------------------------------------------------- Mobile
-      id: 10,
+      id: 11,
       title: 'Transfer Releasing Android',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-trfout.webp",
@@ -104,7 +113,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 11,
+      id: 12,
       title: 'Mobile Price Verifier',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-mpv.webp",
@@ -113,7 +122,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 12,
+      id: 13,
       title: 'Tic Tac Toe Game',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/tic-tac-toe.webp",
@@ -122,7 +131,7 @@ function Projects() {
       link: '',
     }, 
     { // ----------------------------------------------------------------- Design
-      id: 13,
+      id: 14,
       title: 'PRIMOZ Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.webp",
@@ -131,7 +140,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.svg",
     },
     {
-      id: 14,
+      id: 15,
       title: '60th Birthday Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.webp",
@@ -140,7 +149,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.svg",
     },
     {
-      id: 15,
+      id: 16,
       title: 'Game Avatar',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/master-rain.webp",
@@ -149,7 +158,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/master-rain.png",
     },
     {
-      id: 16,
+      id: 17,
       title: 'BAPA Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/bapa-logo.webp",
