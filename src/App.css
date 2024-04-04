@@ -60,7 +60,7 @@ code {
 .fb-badge {
   height: auto;
   width: 332px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 .fb-badge .badge-head {

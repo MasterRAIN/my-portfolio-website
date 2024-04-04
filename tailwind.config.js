@@ -41,6 +41,7 @@ module.exports = {
       },
       width: {
         'form': '500px',
+        'badge': '332px',
       },
       height: {
         'form': '500px',

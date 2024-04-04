@@ -2,7 +2,7 @@ import React from 'react';
 
 function LinkProfileBadge({ profileUrl, name, description1, description2, imageUrl, logoUrl }) {
   return (
-    <div className="fb-badge bg-white dark:bg-h form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 transition-colors duration-300">
+    <div className="fb-badge lg:w-badge xs:w-full bg-white dark:bg-h form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 transition-colors duration-300">
       <div className="badge-head flex gap-1 px-4 items-center">
         <img className="h-5" src={process.env.PUBLIC_URL + logoUrl} alt="logo" loading="lazy" />
       </div>

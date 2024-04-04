@@ -33,7 +33,7 @@ function Home() {
   }, [isMobile]);
 
   return (
-    <div className="relative w-full lg:py-10 lg:px-10 xs:py-10 xs:px-5 text-black dark:text-white">
+    <div className="relative w-full lg:h-full xs:h-screen lg:py-10 lg:px-10 xs:py-10 xs:px-5 text-black dark:text-white">
       <div className="grid place-content-center p-6 xs:pt-6">
         <img
           className="w-56 h-56 rounded-full"
