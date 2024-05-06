@@ -78,6 +78,15 @@ function Projects() {
     },
     { // ----------------------------------------------------------------- Desktop
       id: 8,
+      title: 'EJ - PDF to Excel',
+      icon: 'desktop-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/electronic-journal.webp",
+      category: 'Desktop',
+      stacks: ["VB.NET"],
+      link: '',
+    },
+    {
+      id: 9,
       title: 'Smart EOD Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/smart-eod.webp",
@@ -86,7 +95,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 9,
+      id: 10,
       title: 'Customer Down File Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/downfile.webp",
@@ -95,7 +104,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 10,
+      id: 11,
       title: 'Salary Deduction Posting',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/batch-posting.webp",
@@ -104,7 +113,7 @@ function Projects() {
       link: '',
     },
     { // ----------------------------------------------------------------- Mobile
-      id: 11,
+      id: 12,
       title: 'Transfer Releasing Android',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-trfout.webp",
@@ -113,7 +122,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 12,
+      id: 13,
       title: 'Mobile Price Verifier',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-mpv.webp",
@@ -122,7 +131,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 13,
+      id: 14,
       title: 'Tic Tac Toe Game',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/tic-tac-toe.webp",
@@ -131,7 +140,7 @@ function Projects() {
       link: '',
     }, 
     { // ----------------------------------------------------------------- Design
-      id: 14,
+      id: 15,
       title: 'PRIMOZ Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.webp",
@@ -140,7 +149,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.svg",
     },
     {
-      id: 15,
+      id: 16,
       title: '60th Birthday Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.webp",
@@ -149,7 +158,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.svg",
     },
     {
-      id: 16,
+      id: 17,
       title: 'Game Avatar',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/master-rain.webp",
@@ -158,7 +167,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/master-rain.png",
     },
     {
-      id: 17,
+      id: 18,
       title: 'BAPA Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/bapa-logo.webp",
