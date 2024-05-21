@@ -80,7 +80,7 @@ function Projects() {
       id: 8,
       title: 'EJ - PDF to Excel',
       icon: 'desktop-outline',
-      image: process.env.PUBLIC_URL + "/Images/Projects/electronic-journal.webp",
+      image: process.env.PUBLIC_URL + "/Images/Projects/ej.webp",
       category: 'Desktop',
       stacks: ["VB.NET"],
       link: '',
