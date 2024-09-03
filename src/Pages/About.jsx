@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { Link, scroller, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import Reveal from "../Components/Reveal";
 import PageSectionHeader from "../Components/PageSectionHeader";
 

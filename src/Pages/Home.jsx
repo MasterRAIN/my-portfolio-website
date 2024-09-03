@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { NavLink } from 'react-router-dom';
 import Reveal from '../Components/Reveal';
-import { Link, scroller, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 function Home() {
   const [currentJobIndex, setCurrentJobIndex] = useState(0);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Reveal from "../Components/Reveal";
 import PageSectionHeader from "../Components/PageSectionHeader";
 
@@ -13,6 +13,15 @@ function Projects() {
   ];
 
   const projects = [
+    { // ----------------------------------------------------------------- Web
+      id: 1,
+      title: 'Assortment Bible',
+      icon: 'globe-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/assortment-bible.webp",
+      category: 'Web',
+      stacks: ["React JS", "Tailwind CSS", "Node.js", "Express.js"],
+      link: '',
+    },
     { // ----------------------------------------------------------------- Web
       id: 1,
       title: 'Personal Portfolio',
