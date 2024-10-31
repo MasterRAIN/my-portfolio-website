@@ -208,6 +208,9 @@ function TechStack() {
     { id: 17, category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
     { id: 18, category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 19, category: 'Back End', name: 'SQLite', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/sqlite.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 20, category: 'Back End', name: 'NodeJS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/nodejs.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 21, category: 'Back End', name: 'ExpressJS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/expressjs.svg", size: "h-12 w-12", bg: "bg-b", },
+    { id: 22, category: 'Back End', name: 'MSSQL', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/mssql.svg", size: "h-12 w-12", bg: "bg-b", },
   ];
 
   const stackButtonClick = (category) => {
