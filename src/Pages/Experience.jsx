@@ -10,12 +10,12 @@ const jobExperiences = [
     website: "https://lcc.com.ph/",
     employmentDate: "September 2022 - Present",
     responsibilities: [
-      "Designed and developed In-House Applications based on software requirements to automate business processes for internal use, utilizing agile development methodologies.",
-      "Converted desktop application to web using Javascript, PHP and MySQL and Windows CE PDT application to mobile android application using Xamarin C# and SQLite. ",
+      "Designed and developed in-house applications to automate internal business processes based on software requirements, using agile methodologies with a tech stack including React.js, Tailwind CSS, Node.js, Express.js and MSSQL.",
+      "Converted desktop application to web using JavaScript, PHP and MySQL and Windows CE PDT application to mobile android application using Xamarin, MAUI, C# and SQLite.",
       "Enhanced, modified, repaired and expanded existing software and generic applications.",
       "Regular bug solving and feature development.",
     ],
-    skills: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "C#", "Xamarin", "SQLite"],
+    skills: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MSSQL"],
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const jobExperiences = [
       "Contributed to the design and responsiveness of business website pages.",
       "Conceptualized and crafted a distinctive business logo for use on the website.",
     ],
-    skills: ["HTML", "CSS", "Bootstrap", "Javascript", "JQuery"],
+    skills: ["HTML", "CSS", "Bootstrap", "JavaScript", "JQuery"],
   },
 ];
   
@@ -191,16 +191,12 @@ function TechStack() {
   const items = [
     { id: 1, category: 'Front End', name: 'HTML5', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/html5.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
     { id: 2, category: 'Front End', name: 'CSS3', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/css3.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { id: 3, category: 'Front End', name: 'Javascript', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/js.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 3, category: 'Front End', name: 'JavaScript', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/js.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
     { id: 4, category: 'Back End', name: 'PHP', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/php.svg", size: "h-16 w-16", bg: "bg-oxf-hover", },
     { id: 5, category: 'Back End', name: 'MySQL', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/mysql.svg", size: "h-20 w-20", bg: "bg-oxf-hover", },
-    { id: 6, category: 'Front End', name: 'Bootstrap', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/bootstrap.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { id: 7, category: 'Front End', name: 'JQuery', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/jquery.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { id: 8, category: 'Back End', name: 'Laravel', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/laravel.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
     { id: 9, category: 'Others', name: 'Xamarin', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/xamarin.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 10, category: 'Back End', name: 'C#', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/csharp.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { id: 11, category: 'Back End', name: 'Java', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/java.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
-    { id: 12, category: 'Front End', name: 'React', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/react.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
+    { id: 12, category: 'Front End', name: 'React.js', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/react.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 13, category: 'Front End', name: 'Tailwind CSS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/tailwind.svg", size: "h-16 w-16", bg: "bg-oxf-hover", },
     { id: 14, category: 'Others', name: 'Git', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/git.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
     { id: 15, category: 'Others', name: 'GitHub', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/github.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
@@ -208,8 +204,8 @@ function TechStack() {
     { id: 17, category: 'Others', name: 'Inkscape', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/inkscape.svg", size: "h-12 w-12", bg: "bg-b", },
     { id: 18, category: 'Others', name: 'Netlify', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/netlify.svg", size: "h-14 w-14", bg: "bg-oxf-hover", },
     { id: 19, category: 'Back End', name: 'SQLite', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/sqlite.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { id: 20, category: 'Back End', name: 'NodeJS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/nodejs.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
-    { id: 21, category: 'Back End', name: 'ExpressJS', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/expressjs.svg", size: "h-12 w-12", bg: "bg-b", },
+    { id: 20, category: 'Back End', name: 'Node.js', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/nodejs.svg", size: "h-12 w-12", bg: "bg-oxf-hover", },
+    { id: 21, category: 'Back End', name: 'Express.js', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/expressjs.svg", size: "h-12 w-12", bg: "bg-b", },
     { id: 22, category: 'Back End', name: 'MSSQL', logo: process.env.PUBLIC_URL + "/Images/Tech Logos/mssql.svg", size: "h-12 w-12", bg: "bg-b", },
   ];
 

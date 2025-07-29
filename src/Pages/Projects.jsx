@@ -19,7 +19,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/assortment-bible.webp",
       category: 'Web',
-      stacks: ["React JS", "Tailwind CSS", "Node.js", "Express.js"],
+      stacks: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MSSQL"],
       link: '',
     },
     { // ----------------------------------------------------------------- Web
@@ -28,7 +28,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/personal-portfolio.webp",
       category: 'Web',
-      stacks: ["React JS", "Tailwind CSS", "Netlify"],
+      stacks: ["React.js", "Tailwind CSS", "Netlify"],
       link: 'https://rainiercondebarbacena.netlify.app/',
     },    
     {
@@ -37,7 +37,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/weather-wise.webp",
       category: 'Web',
-      stacks: ["React JS", "Tailwind CSS", "Netlify"],
+      stacks: ["React.js", "Tailwind CSS", "Netlify"],
       link: 'https://rainier-weatherapp.netlify.app/',
     },
     {
@@ -46,7 +46,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/todo-list.webp",
       category: 'Web',
-      stacks: ["React JS", "CSS", "Netlify"],
+      stacks: ["React.js", "CSS", "Netlify"],
       link: 'https://rainier-todolist.netlify.app/',
     },
     {
@@ -55,7 +55,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/online-trfout.webp",
       category: 'Web',
-      stacks: ["HTML,CSS", "CSS", "Javascript", "PHP", "MySQL"],
+      stacks: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       link: '',
     },
     {
@@ -64,7 +64,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/ccras.webp",
       category: 'Web',
-      stacks: ["HTML, CSS", "Javascript", "PHP", "MySQL"],
+      stacks: ["HTML, CSS", "JavaScript", "PHP", "MySQL"],
       link: '',
     },
     {
@@ -73,7 +73,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/online-mpv.webp",
       category: 'Web',
-      stacks: ["HTML, CSS", "Javascript", "PHP", "MySQL"],
+      stacks: ["HTML, CSS", "JavaScript", "PHP", "MySQL"],
       link: '',
     },
     {
@@ -82,7 +82,7 @@ function Projects() {
       icon: 'globe-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/covik-tabaco.webp",
       category: 'Web',
-      stacks: ["HTML, CSS", "Javascript", "JQuery", "PHP", "MySQL"],
+      stacks: ["HTML, CSS", "JavaScript", "JQuery", "PHP", "MySQL"],
       link: '',
     },
     { // ----------------------------------------------------------------- Desktop
