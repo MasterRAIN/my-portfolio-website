@@ -22,7 +22,7 @@ function Projects() {
       stacks: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MSSQL"],
       link: '',
     },
-    { // ----------------------------------------------------------------- Web
+    {
       id: 2,
       title: 'Personal Portfolio',
       icon: 'globe-outline',
@@ -87,6 +87,15 @@ function Projects() {
     },
     { // ----------------------------------------------------------------- Desktop
       id: 9,
+      title: 'Price Verifier - VCO',
+      icon: 'desktop-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/price-verifier.webp",
+      category: 'Desktop',
+      stacks: ["VB.NET"],
+      link: '',
+    },
+    {
+      id: 10,
       title: 'EJ - PDF to Excel',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/ej.webp",
@@ -95,7 +104,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 10,
+      id: 11,
       title: 'Smart EOD Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/smart-eod.webp",
@@ -104,7 +113,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 11,
+      id: 12,
       title: 'Customer Down File Utility',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/downfile.webp",
@@ -113,16 +122,25 @@ function Projects() {
       link: '',
     },
     {
-      id: 12,
+      id: 13,
       title: 'Salary Deduction Posting',
       icon: 'desktop-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/batch-posting.webp",
       category: 'Desktop',
       stacks: ["Laravel", "Batch file"],
       link: '',
-    },
+    },    
     { // ----------------------------------------------------------------- Mobile
-      id: 13,
+      id: 14,
+      title: 'E - Inventory Management System',
+      icon: 'phone-portrait-outline',
+      image: process.env.PUBLIC_URL + "/Images/Projects/e-ims.webp",
+      category: 'Mobile',
+      stacks: [".NET MAUI", "Node.js", "Express.js", "MSSQL"],
+      link: '',
+    },
+    {
+      id: 15,
       title: 'Transfer Releasing Android',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-trfout.webp",
@@ -131,7 +149,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 14,
+      id: 16,
       title: 'Mobile Price Verifier',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/android-mpv.webp",
@@ -140,7 +158,7 @@ function Projects() {
       link: '',
     },
     {
-      id: 15,
+      id: 17,
       title: 'Tic Tac Toe Game',
       icon: 'phone-portrait-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/tic-tac-toe.webp",
@@ -149,7 +167,7 @@ function Projects() {
       link: '',
     }, 
     { // ----------------------------------------------------------------- Design
-      id: 16,
+      id: 18,
       title: 'PRIMOZ Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.webp",
@@ -158,7 +176,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/primoz-logo.svg",
     },
     {
-      id: 17,
+      id: 19,
       title: '60th Birthday Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.webp",
@@ -167,7 +185,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/60th-bday.svg",
     },
     {
-      id: 18,
+      id: 20,
       title: 'Game Avatar',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/master-rain.webp",
@@ -176,7 +194,7 @@ function Projects() {
       link: process.env.PUBLIC_URL + "/Images/Projects/master-rain.png",
     },
     {
-      id: 19,
+      id: 21,
       title: 'BAPA Logo',
       icon: 'brush-outline',
       image: process.env.PUBLIC_URL + "/Images/Projects/bapa-logo.webp",
