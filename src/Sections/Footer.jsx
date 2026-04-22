@@ -8,6 +8,7 @@ function Footer() {
     { name: 'Tailwind CSS', src: '/Images/Tech Logos/tailwindcss_footer.svg', alt: 'tailwind css', size: 'h-3', translate: 'translate-y-2.5' },
   ];
   const yearCreated = '2023';
+  const currentYear = new Date().getFullYear();
   const socialMedia = [
     { name: 'LinkedIn', icon: 'logo-linkedin', link: 'https://www.linkedin.com/in/rainier-barbacena' },
     { name: 'GitHub', icon: 'logo-github', link: 'https://github.com/MasterRAIN' },
@@ -73,7 +74,7 @@ function Footer() {
                 />
               ))}
             </div>
-            <h1>© {yearCreated} All rights reserved | <span className="text-heat dark:text-pro">Rainier Conde Barbacena</span></h1>
+            <h1>© {yearCreated} - {currentYear} All rights reserved | <span className="text-heat dark:text-pro">Rainier Conde Barbacena</span></h1>
             <div className="flex gap-4 absolute xl:right-16 lg:right-10 md:right-6 xs:right-3 text-xl translate-y-1.5">
               {socialMedia.map((social, index) => (
                 <a 
