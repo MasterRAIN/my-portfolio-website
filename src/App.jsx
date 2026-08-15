@@ -1,0 +1,80 @@
+import React, { useState, useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import './App.css';
+import Header from './Sections/Header';
+import Footer from './Sections/Footer';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Experience from './Pages/Experience';
+import Blog from './Pages/Blog';
+import Projects from './Pages/Projects';
+import Contact from './Pages/Contact';
+import PageNotFound from './Pages/PageNotFound';
+import Preloader from './Components/Preloader';
+import Particle from './Components/Particle';
+
+const getIsMobile = () => (typeof window !== 'undefined' ? window.innerWidth <= 768 : false);
+
+function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(getIsMobile);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    const timeoutId = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <div className="relative bg-white dark:bg-h transition-colors duration-300 overflow-hidden">
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <Router>
+          <Header />
+          <Particle />
+          <div id="home-sec" className="pt-16 min-h-screen transition-colors duration-300">
+            {isMobile ? (
+              <div>
+                <Home />
+                <About />
+                <Experience />
+                <Projects />
+                <Contact />
+              </div>
+            ) : (
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about-me" element={<About />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<PageNotFound />} />
+              </Routes>
+            )}
+          </div>
+          <Footer />
+        </Router>
+      )}
+    </div>
+  );
+}
+
+export default App;

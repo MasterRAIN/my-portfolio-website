@@ -50,7 +50,7 @@ function MyBackground() {
     return {
     name: 'I\'m Rainier',
     title: 'Full Stack Developer',
-    description: 'I am currently working as an Application Developer at LCC Malls. I\'m a passionate full-stack developer who turns ideas into code with a combination of front-end delicacy and back-end precision. I\'m excited to join a dynamic team and use my talent for innovation and problem-solving to build seamless digital experiences. Prepared to contribute and grow in a collaborative tech environment.',
+    description: 'I\'m a passionate full-stack developer who turns ideas into code with a combination of front-end delicacy and back-end precision. I\'m excited to join a dynamic team and use my talent for innovation and problem-solving to build seamless digital experiences. Prepared to contribute and grow in a collaborative tech environment.',
     personals: [`Age : ${age}`, 'Pronouns : He/Him', 'Residence : Albay, Philippines'],
     qoutes: ['"If it works, ', 'don\'t touch it."'],
     link: 'https://lcc.com.ph/',
@@ -58,8 +58,12 @@ function MyBackground() {
   }, [age]);
 
   const handleClick = () => {
-    const pdfPath = process.env.PUBLIC_URL + "/assets/Barbacena, Rainier C. - Resume.pdf";
-    window.open(pdfPath, '_blank');
+    const pdfPath = '/Assets/Barbacena, Rainier C. - Resume.pdf';
+    const newWindow = window.open(pdfPath, '_blank');
+
+    if (newWindow) {
+      newWindow.opener = null;
+    }
   };
 
   return (
@@ -185,7 +189,7 @@ function MyEducation() {
         <div className="flex-auto"></div>
         <div className="lg:w-3/5 px-4 grid grid-cols-2 gap-8">
           <div className="mdlg:h-52 shadow-md ring-1 rounded-lg mdlg:flex col-span-2 overflow-hidden transition-colors duration-300">
-            <img className="lg:h-full" src={process.env.PUBLIC_URL + "/Images/PITA.webp"} alt="PITA Building" loading="lazy" />
+            <img className="lg:h-full" src="/Images/PITA.webp" alt="PITA Building" loading="lazy" />
             {schools[0].college.map((item) => (
             <div key={item.id} className="overflow-auto">
               <div key={item.degree} className="px-6 py-5">
@@ -213,14 +217,82 @@ function MyEducation() {
   )
 }
 
+const flipCardStyles = `
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: relative;
+    width: 100%;
+  }
+  .flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+`;
+
 function About() {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  useEffect(() => {
+    const educationSection = document.getElementById('educationSection');
+    if (!educationSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsFlipped(entry.isIntersecting);
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(educationSection);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div id="about-sec" className="relative">
+      <style>{flipCardStyles}</style>
       <MyBackground />
       <Link to="educationSection" spy={true} smooth={'easeInOutQuart'} duration={1000} offset={-50}>
         <div className="flex justify-center">
-          <img className="lg:fixed xxl:left-60 xl:left-40 lg:left-20 md:left-16 top-52 w-80 mb-10 selfie-img rounded-xl cursor-pointer z-10" src={process.env.PUBLIC_URL + "/Images/grad_pic.webp"} alt="" loading="lazy" />
+          <div
+            className="lg:fixed xxl:left-60 xl:left-40 lg:left-20 md:left-16 top-52 w-80 mb-10 z-10 cursor-pointer flip-card"
+            style={{ perspective: '1000px' }}
+          >
+            <div
+              className="flip-card-inner"
+              style={{
+                transformStyle: 'preserve-3d',
+                transition: 'transform 0.8s',
+                transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+              }}
+            >
+              <img
+                className="selfie-img rounded-xl flip-card-front"
+                style={{ backfaceVisibility: 'hidden' }}
+                src="/Images/corp_pic.webp"
+                alt="Rainier"
+                loading="lazy"
+              />
+              <img
+                className="selfie-img rounded-xl flip-card-back"
+                style={{
+                  backfaceVisibility: 'hidden',
+                  transform: 'rotateY(180deg)',
+                }}
+                src="/Images/grad_pic.webp"
+                alt="Rainier"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </Link>
       <MyEducation />

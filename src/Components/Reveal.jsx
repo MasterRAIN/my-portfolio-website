@@ -3,16 +3,21 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 
 function Reveal({ children, axis = 'y', distance = -50, width = '100%', delay = 0 }) {
   const containerRef = useRef(null);
-  const inView = useInView(containerRef, { triggerOnce: true });
+  const hasObserver = typeof window !== 'undefined' && 'IntersectionObserver' in window;
+  const inView = useInView(containerRef, { triggerOnce: true, skip: !hasObserver });
   const mainControls = useAnimation();
 
   useEffect(() => {
-    if (inView) {
-      mainControls.start('visible');
+    if (hasObserver) {
+      if (inView) {
+        mainControls.start('visible');
+      } else {
+        mainControls.start('hidden');
+      }
     } else {
-      mainControls.start('hidden');
+      mainControls.start('visible');
     }
-  }, [inView, mainControls]);
+  }, [hasObserver, inView, mainControls]);
 
   const variants = {
     visible: { opacity: 1, [axis]: 0 },

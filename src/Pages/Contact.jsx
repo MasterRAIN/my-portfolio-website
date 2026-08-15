@@ -15,28 +15,32 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || import.meta.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
     // 🛡️ Anti-spam
-    if (form.current.bot_field.value) return;
+    if (form.current?.bot_field?.value) return;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setStatus('error');
+      return;
+    }
 
     setLoading(true);
     setStatus(null);
 
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    )
-    .then(() => {
-      setStatus('success');
-      form.current.reset();
-    })
-    .catch(() => {
-      setStatus('error');
-    })
-    .finally(() => {
-      setLoading(false);
-    });
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+      .then(() => {
+        setStatus('success');
+        form.current.reset();
+      })
+      .catch(() => {
+        setStatus('error');
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   // 🧠 Auto-hide toast
@@ -52,8 +56,8 @@ function Contact() {
       profileUrl: 'https://www.linkedin.com/in/rainier-barbacena',
       name: 'Rainier Barbacena',
       description1: 'Programmer/Application Developer',
-      description2: 'LCC Group of Companies',
-      imageUrl: '/Images/linkedin-dp.webp',
+      description2: 'Tabaco, Bicol Region, Philippines',
+      imageUrl: '/Images/corp_pic.webp',
       logoUrl: '/Images/linkedin-logo.png',
     },
     {
@@ -138,7 +142,7 @@ function Contact() {
                     <div className="grid place-content-center md:block xs:hidden">
                       <img
                         className="h-72"
-                        src={process.env.PUBLIC_URL + "/Images/contact.svg"}
+                        src="/Images/contact.svg"
                         alt="Contact"
                         loading="lazy"
                       />

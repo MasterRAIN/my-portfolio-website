@@ -4,10 +4,10 @@ function LinkProfileBadge({ profileUrl, name, description1, description2, imageU
   return (
     <div className="fb-badge lg:w-badge xs:w-full bg-white dark:bg-h form-shadow backdrop-blur bg-opacity-25 dark:bg-opacity-25 transition-colors duration-300">
       <div className="badge-head flex gap-1 px-4 items-center">
-        <img className="h-5" src={process.env.PUBLIC_URL + logoUrl} alt="logo" loading="lazy" />
+        <img className="h-5" src={logoUrl} alt="logo" loading="lazy" />
       </div>
       <div className="px-4 py-3">
-        <img className="h-14 rounded-full" src={process.env.PUBLIC_URL + imageUrl} alt={name} loading="lazy" />
+        <img className="h-14 rounded-full" src={imageUrl} alt={name} loading="lazy" />
         <h1 className="pt-2 font-sans text-black dark:text-white font-semibold underline transition-colors duration-300">
           <a href={profileUrl} target="_blank" rel="noopener noreferrer">
             {name}
